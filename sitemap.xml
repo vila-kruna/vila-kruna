@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- Homepage -->
+  <url>
+    <loc>https://vilakruna.rs/</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vilakruna.rs/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://vilakruna.rs/en/</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://vilakruna.rs/" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Accommodation -->
+  <url>
+    <loc>https://vilakruna.rs/smestaj.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/smestaj.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/accommodation.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://vilakruna.rs/en/accommodation.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/smestaj.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/accommodation.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Pricing -->
+  <url>
+    <loc>https://vilakruna.rs/cenovnik.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/cenovnik.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/pricing.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://vilakruna.rs/en/pricing.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/cenovnik.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/pricing.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Gallery -->
+  <url>
+    <loc>https://vilakruna.rs/galerija.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/galerija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/gallery.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://vilakruna.rs/en/gallery.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/galerija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/gallery.html" />
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://vilakruna.rs/kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/kontakt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/contact.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://vilakruna.rs/en/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/kontakt.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/contact.html" />
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+</urlset>

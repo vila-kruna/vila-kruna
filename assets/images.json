@@ -1,0 +1,392 @@
+[
+  {
+    "name": "sobadjakuzi2",
+    "alt": "Luksuzna hotelska soba sa đakuzi kadom i prostranim krevetom za savršen odmor",
+    "alt_eng": "Luxury hotel room with a jacuzzi tub and spacious bed for perfect relaxation",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF",
+    "small": "https://utfs.io/f/7BAyoiVHGCJen4mrKIkO3WXfeNzPAUHa8t91oGIrqb7YRShF",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeW7jl11y3TzVOdhpLAg9P1CkqHDZurNGBRfK7",
+    "large": "https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF"
+  },
+  {
+    "name": "soba4",
+    "alt": "Prijatna dvokrevetna hotelska soba sa klima uređajem i televizorom sa ravnim ekranom",
+    "alt_eng": "Pleasant double hotel room with air conditioning and flat-screen TV",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeFPB87c9AMREUBHCxdcopg2rX5AJteL8a9kwZ",
+    "small": "https://utfs.io/f/7BAyoiVHGCJer3Zgtv7LmyREhAaYDQt3XkV61NJ7GHWFKzdP",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJetnnnFsi3gEFV8uPekhloUQDIBTXZRYH4riAm",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeFPB87c9AMREUBHCxdcopg2rX5AJteL8a9kwZ"
+  },
+  {
+    "name": "soba",
+    "alt": "Komforna hotelska soba sa braon i bež tonovima, udobnim krevetom i toplim osvetljenjem",
+    "alt_eng": "Comfortable hotel room in brown and beige tones, cozy bed and warm lighting",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeliRlQTY43o2rhvXi6WazDQ9IB51uFONndpYx",
+    "small": "https://utfs.io/f/7BAyoiVHGCJe99HCnMtRGvLZCJ8nItspe01rHdu6FDziUhb9",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJekYU6CfN8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qj",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeliRlQTY43o2rhvXi6WazDQ9IB51uFONndpYx"
+  },
+  {
+    "name": "saunaglavna",
+    "alt": "Glavna sauna u Vila Kruna Frenki sa prirodnim drvetom i kamenom",
+    "alt_eng": "Main sauna at Vila Kruna Frenki with natural wood and stone",
+    "category": "sauna",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe9s7raRtRGvLZCJ8nItspe01rHdu6FDziUhb9",
+    "small": "https://utfs.io/f/7BAyoiVHGCJenMofCEkO3WXfeNzPAUHa8t91oGIrqb7YRShF",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJexFFK1L5aOi3qGsCjHU1Sv9ZFteuhBRAJ5EcV",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe9s7raRtRGvLZCJ8nItspe01rHdu6FDziUhb9"
+  },
+  {
+    "name": "hodniksobe",
+    "alt": "Elegantan hotelski hodnik sa drvenim podom i diskretnom rasvetom",
+    "alt_eng": "Elegant hotel corridor with wooden floor and subtle lighting",
+    "category": "enterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJelgC3m3Y43o2rhvXi6WazDQ9IB51uFONndpYx",
+    "small": "https://utfs.io/f/7BAyoiVHGCJe1rOf9v6qgxu2CecZrKJidoU56atQO47RGslj",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeuKyiJfTVyGrDOhN0j8TMXtP26zBfwax3H9LQ",
+    "large": "https://utfs.io/f/7BAyoiVHGCJelgC3m3Y43o2rhvXi6WazDQ9IB51uFONndpYx"
+  },
+  {
+    "name": "hodnikfotelja",
+    "alt": "Hotelski hodnik sa udobnom foteljom i autentičnim detaljima enterijera",
+    "alt_eng": "Hotel corridor with a comfortable armchair and authentic interior details",
+    "category": "enterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJenlAI9hEkO3WXfeNzPAUHa8t91oGIrqb7YRSh",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeXAvHn0BSaXcJFHvKixPWG83rVlhQ2eusYD1z",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeana7jWQ5AwHKSWiINYMC0eO7TLmQ2ybudPGo",
+    "large": "https://utfs.io/f/7BAyoiVHGCJenlAI9hEkO3WXfeNzPAUHa8t91oGIrqb7YRSh"
+  },
+  {
+    "name": "cafe",
+    "alt": "Hotelski kafić sa ugodnom atmosferom, drvenim stolicama i barom",
+    "alt_eng": "Hotel cafe with cozy atmosphere, wooden chairs and a bar",
+    "category": "enterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJekY9PD18hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd",
+    "small": "https://utfs.io/f/7BAyoiVHGCJenX84b7kO3WXfeNzPAUHa8t91oGIrqb7YRShF",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJekYFFkOM8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qj",
+    "large": "https://utfs.io/f/7BAyoiVHGCJekY9PD18hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd"
+  },
+  {
+    "name": "poklonaranzman",
+    "alt": "Ukrasni poklon aranžman sa cvećem i detaljima dobrodošlice za goste",
+    "alt_eng": "Decorative gift arrangement with flowers and welcome details for guests",
+    "category": "enterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeCt235AnJqLhaVXvwsKWTQ24RuMo5NZF79DUf",
+    "small": "https://utfs.io/f/7BAyoiVHGCJewp9aPjxnrpBcOEwVMxR91bLPgWl4I8yhemjS",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeYuEQJPURlaN3Hwp7bLtfP1028rzGFViSOy4g",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeCt235AnJqLhaVXvwsKWTQ24RuMo5NZF79DUf"
+  },
+  {
+    "name": "sobakaucumetnicka",
+    "alt": "Hotelska soba sa umetničkom foteljom i kreativnim dekorom na zidu",
+    "alt_eng": "Hotel room with an artistic armchair and creative wall decor",
+    "category": "enterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJefmZCpqwg3MwKz4N9csUtXpIuHiakbmjG0V5F",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeLtGzkKpjfe54a98oxhcmv3dwnAGPOTzrp6sQ",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJexWry05aOi3qGsCjHU1Sv9ZFteuhBRAJ5EcVW",
+    "large": "https://utfs.io/f/7BAyoiVHGCJefmZCpqwg3MwKz4N9csUtXpIuHiakbmjG0V5F"
+  },
+  {
+    "name": "kupatilo3",
+    "alt": "Svetlo kupatilo sa belim nameštajem i ukrasnim biljkama",
+    "alt_eng": "Bright bathroom with white furniture and decorative plants",
+    "category": "kupatilo",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeJc20Y0ZDNoA42WU9F7v0bmGizdBhfsLQYn1R",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeK5gTtfisGQb96jUCoABglX5P0FVZp7ucOJhv",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJephwSbRDEpt3j416Wug7RMBTvq8G0iboScmZC",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeJc20Y0ZDNoA42WU9F7v0bmGizdBhfsLQYn1R"
+  },
+  {
+    "name": "sobakauc",
+    "alt": "Hotelska soba sa udobnom foteljom i toplim osvetljenjem za opuštanje",
+    "alt_eng": "Hotel room with a comfortable armchair and warm lighting for relaxation",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe5940KWN1DY9xXlWounSJCZfiFbMEjqwy6k3r",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeX3QHMZBSaXcJFHvKixPWG83rVlhQ2eusYD1z",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeQEPcP9QFszBVcEL0fKZ1n9HAIibeqC62QUD7",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe5940KWN1DY9xXlWounSJCZfiFbMEjqwy6k3r"
+  },
+  {
+    "name": "sobadjakuzi4",
+    "alt": "Soba sa đakuzijem u hotelskom kompleksu, idealna za opuštanje dvoje",
+    "alt_eng": "Room with a jacuzzi in the hotel complex, ideal for couples",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe28vDdJsjWxN9zdEUKa1O4mc8He07DiboJvLk",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeflO8aIg3MwKz4N9csUtXpIuHiakbmjG0V5F8",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeKGGuM4isGQb96jUCoABglX5P0FVZp7ucOJhv",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe28vDdJsjWxN9zdEUKa1O4mc8He07DiboJvLk"
+  },
+  {
+    "name": "soba6",
+    "alt": "Svetla i prozračna hotelska soba sa velikim prozorima i kvalitetnim tekstilom",
+    "alt_eng": "Bright and airy hotel room with large windows and premium textiles",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeOJxEOowWK3MQ97EyJDPtg4CSGVazcdwIN8sf",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeQmLloDFszBVcEL0fKZ1n9HAIibeqC62QUD7g",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJepK3ZWiDEpt3j416Wug7RMBTvq8G0iboScmZC",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeOJxEOowWK3MQ97EyJDPtg4CSGVazcdwIN8sf"
+  },
+  {
+    "name": "sobadjakuzi",
+    "alt": "Hotelska soba sa đakuzi kadom i opuštajućom atmosferom za spa doživljaj",
+    "alt_eng": "Hotel room with a jacuzzi tub and relaxing atmosphere for a spa experience",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJePJefN4Hx8IiVXgY2mu5rspelTc6EkNGOdya1",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeR3qNLN2riKbGCglenWxf2TFUY8PsjwkBQJZS",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJe1YGPNW6qgxu2CecZrKJidoU56atQO47RGslj",
+    "large": "https://utfs.io/f/7BAyoiVHGCJePJefN4Hx8IiVXgY2mu5rspelTc6EkNGOdya1"
+  },
+  {
+    "name": "sobadjakuzi3",
+    "alt": "Romantična hotelska soba sa đakuzi kadom i svetlom aromatičnom svećom",
+    "alt_eng": "Romantic hotel room with a jacuzzi tub and light aromatic candle",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeOaH9s6dwWK3MQ97EyJDPtg4CSGVazcdwIN8s",
+    "small": "https://utfs.io/f/7BAyoiVHGCJe1Qvp9P6qgxu2CecZrKJidoU56atQO47RGslj",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJe6RiyFknW4e0gzcCnpMhjOWmtx37KTAkor2J9",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeOaH9s6dwWK3MQ97EyJDPtg4CSGVazcdwIN8s"
+  },
+  {
+    "name": "sobadjakuzi5",
+    "alt": "Hotelska soba sa hidromasažnom kadom i vrhunskom posteljinom",
+    "alt_eng": "Hotel room with a hydromassage tub and premium bedding",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe9DeyfZtRGvLZCJ8nItspe01rHdu6FDziUhb9",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeHbxP7aeIMLhuUtecsf4QiWJy7dvDCjXSwgo0",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJefYNYzVg3MwKz4N9csUtXpIuHiakbmjG0V5F8",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe9DeyfZtRGvLZCJ8nItspe01rHdu6FDziUhb9"
+  },
+  {
+    "name": "sobakauc2",
+    "alt": "Moderna soba sa kožnom foteljom, idealna za čitanje i odmor",
+    "alt_eng": "Modern room with a leather armchair, ideal for reading and rest",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJePomEg5Hx8IiVXgY2mu5rspelTc6EkNGOdya1",
+    "small": "https://utfs.io/f/7BAyoiVHGCJekcoc278hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJep6RQQ5RDEpt3j416Wug7RMBTvq8G0iboScmZ",
+    "large": "https://utfs.io/f/7BAyoiVHGCJePomEg5Hx8IiVXgY2mu5rspelTc6EkNGOdya1"
+  },
+  {
+    "name": "sobakrevet",
+    "alt": "Hotelska soba sa prostranim bračnim krevetom i kvalitetnim dušekom",
+    "alt_eng": "Hotel room with a spacious double bed and high-quality mattress",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeEec9h5rPcXMmaOUj8s7kl0rSzFKd5uGAP3hZ",
+    "small": "https://utfs.io/f/7BAyoiVHGCJesQb8PxfxzVZ97gHrwBLuytnK6CIG5jvqYeON",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeaOwgFTQ5AwHKSWiINYMC0eO7TLmQ2ybudPGo",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeEec9h5rPcXMmaOUj8s7kl0rSzFKd5uGAP3hZ"
+  },
+  {
+    "name": "soba7",
+    "alt": "Prostrana soba sa odvojenim dnevnim boravkom i moderno opremljenom kuhinjom",
+    "alt_eng": "Spacious room with a separate living room and modern kitchen",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeVBysAxjAUXwZda1pxHOQk7JPCNSYK2BgEi65",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeN7GKL8XOzlHkBinrvAM0S4g1T7VIdxEYm6jy",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeVvnhLcojAUXwZda1pxHOQk7JPCNSYK2BgEi6",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeVBysAxjAUXwZda1pxHOQk7JPCNSYK2BgEi65"
+  },
+  {
+    "name": "soba8",
+    "alt": "Luksuzna soba sa velikim dnevnim boravkom i panoramskim prozorima",
+    "alt_eng": "Luxury room with a large living room and panoramic windows",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe0MUT7xuWe7NcOKCQqHpFrEjSG4mLx8iAdMR5",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeMIBfz5pYuSs9iEHly4XdaDZhmtT5jefvV7kW",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeKs0G4aisGQb96jUCoABglX5P0FVZp7ucOJhv",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe0MUT7xuWe7NcOKCQqHpFrEjSG4mLx8iAdMR5"
+  },
+  {
+    "name": "soba9",
+    "alt": "Soba sa braon tonovima i prostranim krevetom za porodični boravak",
+    "alt_eng": "Room with brown tones and a spacious bed for family stays",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJek2lZAl8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd",
+    "small": "https://utfs.io/f/7BAyoiVHGCJe3OfTuiC0RYjxzwP9aiQd1LSt3Ug8kN6BeDVq",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeHtkKaLeIMLhuUtecsf4QiWJy7dvDCjXSwgo0",
+    "large": "https://utfs.io/f/7BAyoiVHGCJek2lZAl8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd"
+  },
+  {
+    "name": "soba10",
+    "alt": "Moderna soba sa svim potrebnim sadržajima za dugi boravak gostiju",
+    "alt_eng": "Modern room with all necessary amenities for a long guest stay",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeDWmGdM51KQbfROnw2i9JW8tvksrZUMVBCPly",
+    "small": "https://utfs.io/f/7BAyoiVHGCJesp6go5fxzVZ97gHrwBLuytnK6CIG5jvqYeON",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJe6DtvYCW4e0gzcCnpMhjOWmtx37KTAkor2J9s",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeDWmGdM51KQbfROnw2i9JW8tvksrZUMVBCPly"
+  },
+  {
+    "name": "soba11",
+    "alt": "Soba u toplim bojama sa udobnim nameštajem i prirodnim osvetljenjem",
+    "alt_eng": "Room with warm colors with comfortable furniture and natural lighting",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJetedZrS3gEFV8uPekhloUQDIBTXZRYH4riAm2",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeVvT2o2MjAUXwZda1pxHOQk7JPCNSYK2BgEi6",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJebDmieN2LGzuFy7ZUTmKhl3aNCsP6HJvW0cRA",
+    "large": "https://utfs.io/f/7BAyoiVHGCJetedZrS3gEFV8uPekhloUQDIBTXZRYH4riAm2"
+  },
+  {
+    "name": "soba12",
+    "alt": "Prostrana soba sa odličnim rasporedom i kvalitetnim detaljima opremanja",
+    "alt_eng": "Spacious room with an excellent layout and high-quality furnishings",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe20uWLKsjWxN9zdEUKa1O4mc8He07DiboJvLk",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeLxKQDypjfe54a98oxhcmv3dwnAGPOTzrp6sQ",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJexnZrT3aOi3qGsCjHU1Sv9ZFteuhBRAJ5EcVW",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe20uWLKsjWxN9zdEUKa1O4mc8He07DiboJvLk"
+  },
+  {
+    "name": "kupatilo",
+    "alt": "Moderno hotelsko kupatilo sa belim pločicama i LED osvetljenjem",
+    "alt_eng": "Modern hotel bathroom with white tiles and LED lighting",
+    "category": "kupatilo",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeK6zljZisGQb96jUCoABglX5P0FVZp7ucOJhv",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeS0h7v1ml1HFVKzB5GA7QxYqX8pwntPyUDgZE",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeFnoEv7AMREUBHCxdcopg2rX5AJteL8a9kwZ1",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeK6zljZisGQb96jUCoABglX5P0FVZp7ucOJhv"
+  },
+  {
+    "name": "kupatilo2",
+    "alt": "Elegantno kupatilo sa staklenom pregradom i vrhunskim slavinama",
+    "alt_eng": "Elegant bathroom with a glass partition and premium fixtures",
+    "category": "kupatilo",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe0RzCesuWe7NcOKCQqHpFrEjSG4mLx8iAdMR5",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeneFL3ckO3WXfeNzPAUHa8t91oGIrqb7YRShF",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeTNdoXA9Ag3ByNYFlniLkxZKHbjQfqt7wsRc1",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe0RzCesuWe7NcOKCQqHpFrEjSG4mLx8iAdMR5"
+  },
+  {
+    "name": "kupatilo4",
+    "alt": "Hotelsko kupatilo sa prirodnim materijalima i pločicama sa efektom kamena",
+    "alt_eng": "Hotel bathroom with natural materials and stone-effect tiles",
+    "category": "kupatilo",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeDWR0zaI1KQbfROnw2i9JW8tvksrZUMVBCPly",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeBrAAEibK3tlQenqGNdb67MPuIh9zA0VpcixX",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJerRtak47LmyREhAaYDQt3XkV61NJ7GHWFKzdP",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeDWR0zaI1KQbfROnw2i9JW8tvksrZUMVBCPly"
+  },
+  {
+    "name": "kupatilo5",
+    "alt": "Luksuzno kupatilo sa dubokom kadom i toaletnim stočićem od drveta",
+    "alt_eng": "Luxury bathroom with a deep bathtub and wooden vanity table",
+    "category": "kupatilo",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeT3nMvjw9Ag3ByNYFlniLkxZKHbjQfqt7wsRc",
+    "small": "https://utfs.io/f/7BAyoiVHGCJekO2guw8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJe5RVrGWN1DY9xXlWounSJCZfiFbMEjqwy6k3r",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeT3nMvjw9Ag3ByNYFlniLkxZKHbjQfqt7wsRc"
+  },
+  {
+    "name": "kupatilo6",
+    "alt": "Kupatilo sa crnim metalnim detaljima i prostranom tuš kabinom",
+    "alt_eng": "Bathroom with black metal details and a spacious shower cabin",
+    "category": "kupatilo",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeiVuWtGhre7CqBzTYIkpGSxyQ0f6Pu24NvgFZ",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeC8aLF5WnJqLhaVXvwsKWTQ24RuMo5NZF79DU",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJerjJF8uJ7LmyREhAaYDQt3XkV61NJ7GHWFKzd",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeiVuWtGhre7CqBzTYIkpGSxyQ0f6Pu24NvgFZ"
+  },
+  {
+    "name": "tus",
+    "alt": "Moderna tuš kabina sa staklenim zidom i kišnim tušem u hotelskom kupatilu",
+    "alt_eng": "Modern shower cabin with a glass wall and rain shower head in the hotel bathroom",
+    "category": "kupatilo",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeAHoBZb3Ee2cMNEHvPDR0mzldWLfVIotjhbaY",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeZVIhtR0N9m3HJDfGQ0WzkajPEy8b67YigqXd",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeCryT8YnJqLhaVXvwsKWTQ24RuMo5NZF79DUf",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeAHoBZb3Ee2cMNEHvPDR0mzldWLfVIotjhbaY"
+  },
+  {
+    "name": "sauna",
+    "alt": "Tradicionalna finska sauna sa drvenim klupama i kamenim zidovima",
+    "alt_eng": "Traditional Finnish sauna with wooden benches and stone walls",
+    "category": "sauna",
+    "path": "https://utfs.io/f/7BAyoiVHGCJekPnuqb8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd",
+    "small": "https://utfs.io/f/7BAyoiVHGCJetnAiWZK3gEFV8uPekhloUQDIBTXZRYH4riAm",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeE669LqPcXMmaOUj8s7kl0rSzFKd5uGAP3hZ4",
+    "large": "https://utfs.io/f/7BAyoiVHGCJekPnuqb8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd"
+  },
+  {
+    "name": "sauna2",
+    "alt": "Sauna prostorija sa drvenom opremom i prigušenom rasvetom za opuštanje",
+    "alt_eng": "Sauna room with wooden equipment and dimmed lighting for relaxation",
+    "category": "sauna",
+    "path": "https://utfs.io/f/7BAyoiVHGCJe1JpMHS6qgxu2CecZrKJidoU56atQO47RGslj",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeVKKqfrjAUXwZda1pxHOQk7JPCNSYK2BgEi65",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJexjpO1laOi3qGsCjHU1Sv9ZFteuhBRAJ5EcVW",
+    "large": "https://utfs.io/f/7BAyoiVHGCJe1JpMHS6qgxu2CecZrKJidoU56atQO47RGslj"
+  },
+  {
+    "name": "saunadisplay",
+    "alt": "Sauna sa kontrolnim panelom i digitalnim temperaturnim prikazom",
+    "alt_eng": "Sauna with a control panel and digital temperature display",
+    "category": "sauna",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeoPN5XyMgcIXlnvY26dU3yZLBARpD1TFt54G7",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeZ6Jscx0N9m3HJDfGQ0WzkajPEy8b67YigqXd",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeK2g1k0isGQb96jUCoABglX5P0FVZp7ucOJhv",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeoPN5XyMgcIXlnvY26dU3yZLBARpD1TFt54G7"
+  },
+  {
+    "name": "saunaumetnicki",
+    "alt": "Umetnički uređena sauna sa dekorativnim elementima i toplom atmosferom",
+    "alt_eng": "Artistically decorated sauna with ornamental details and warm atmosphere",
+    "category": "sauna",
+    "path": "https://utfs.io/f/7BAyoiVHGCJetr7Ibn3gEFV8uPekhloUQDIBTXZRYH4riAm2",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeNbSSvfWXOzlHkBinrvAM0S4g1T7VIdxEYm6j",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJebGpsIILGzuFy7ZUTmKhl3aNCsP6HJvW0cRA8",
+    "large": "https://utfs.io/f/7BAyoiVHGCJetr7Ibn3gEFV8uPekhloUQDIBTXZRYH4riAm2"
+  },
+  {
+    "name": "djakuzi",
+    "alt": "Hotelski đakuzi sa svetlima i masažnim mlaznicama za opuštanje",
+    "alt_eng": "Hotel jacuzzi with lights and massage jets for relaxation",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJehR1junOYo4AnLjJOW0NUMQ1ygPFHpcZdfT25",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeJT5OSBZDNoA42WU9F7v0bmGizdBhfsLQYn1R",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJe9f1DcytRGvLZCJ8nItspe01rHdu6FDziUhb9",
+    "large": "https://utfs.io/f/7BAyoiVHGCJehR1junOYo4AnLjJOW0NUMQ1ygPFHpcZdfT25"
+  },
+  {
+    "name": "djakuziglavna",
+    "alt": "Glavni đakuzi u kompleksu sa kamenim okvirom i hidromasažom",
+    "alt_eng": "Main jacuzzi in the complex with a stone frame and hydromassage",
+    "category": "sobe",
+    "path": "https://utfs.io/f/7BAyoiVHGCJebJCO2lLGzuFy7ZUTmKhl3aNCsP6HJvW0cRA8",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeMgCc675pYuSs9iEHly4XdaDZhmtT5jefvV7k",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJeQ7R9XrFszBVcEL0fKZ1n9HAIibeqC62QUD7g",
+    "large": "https://utfs.io/f/7BAyoiVHGCJebJCO2lLGzuFy7ZUTmKhl3aNCsP6HJvW0cRA8"
+  },
+  {
+    "name": "cafe2",
+    "alt": "Moderan hotelski kafić sa prostranim stolovima i prirodnim osvetljenjem",
+    "alt_eng": "Modern hotel cafe with spacious tables and natural lighting",
+    "category": "enterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeaxT7a6Q5AwHKSWiINYMC0eO7TLmQ2ybudPGo",
+    "small": "https://utfs.io/f/7BAyoiVHGCJen5AFwfkO3WXfeNzPAUHa8t91oGIrqb7YRShF",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJe9WBTpotRGvLZCJ8nItspe01rHdu6FDziUhb9",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeaxT7a6Q5AwHKSWiINYMC0eO7TLmQ2ybudPGo"
+  },
+  {
+    "name": "recepcija",
+    "alt": "Profesionalna recepcija Vila Kruna Frenki sa prijateljskim osobljem",
+    "alt_eng": "Professional reception at Vila Kruna Frenki with friendly staff",
+    "category": "enterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJeO8qyNqwWK3MQ97EyJDPtg4CSGVazcdwIN8sf",
+    "small": "https://utfs.io/f/7BAyoiVHGCJeEeouJxsPcXMmaOUj8s7kl0rSzFKd5uGAP3hZ",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJelZLe9FY43o2rhvXi6WazDQ9IB51uFONndpYx",
+    "large": "https://utfs.io/f/7BAyoiVHGCJeO8qyNqwWK3MQ97EyJDPtg4CSGVazcdwIN8sf"
+  },
+  {
+    "name": "spolja",
+    "alt": "Spoljašnjost Vila Kruna Frenki sa prelepim vrtom i parkingom",
+    "alt_eng": "Exterior of Vila Kruna Frenki with a beautiful garden and parking",
+    "category": "eksterijer",
+    "path": "https://utfs.io/f/7BAyoiVHGCJelvHRDeY43o2rhvXi6WazDQ9IB51uFONndpYx",
+    "small": "https://utfs.io/f/7BAyoiVHGCJefLQZhUg3MwKz4N9csUtXpIuHiakbmjG0V5F8",
+    "medium": "https://utfs.io/f/7BAyoiVHGCJenY9H9BkO3WXfeNzPAUHa8t91oGIrqb7YRShF",
+    "large": "https://utfs.io/f/7BAyoiVHGCJelvHRDeY43o2rhvXi6WazDQ9IB51uFONndpYx"
+  }
+]
