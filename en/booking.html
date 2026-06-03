@@ -4,17 +4,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us — Vila Kruna Belgrade</title>
-  <meta name="description"
-    content="Get in touch with Vila Kruna in Belgrade. Address Svetozara Ivačkovića 4, Rakovica. Send us a message, call us, or get detailed driving directions.">
+  <title>Booking — Vila Kruna Belgrade</title>
+  <meta name="description" content="Book your stay at Vila Kruna in Belgrade quickly and easily.">
 
   <!-- Hreflang Tags for multilingual SEO -->
-  <link rel="alternate" hreflang="sr" href="https://vilakruna.rs/kontakt.html" />
-  <link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/contact.html" />
-  <link rel="alternate" hreflang="x-default" href="https://vilakruna.rs/kontakt.html" />
+  <link rel="alternate" hreflang="sr" href="https://vilakruna.rs/rezervacija.html" />
+  <link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/booking.html" />
+  <link rel="alternate" hreflang="x-default" href="https://vilakruna.rs/rezervacija.html" />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://vilakruna.rs/en/contact.html" />
+  <link rel="canonical" href="https://vilakruna.rs/en/booking.html" />
   <!-- Favicons -->
   <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
@@ -23,7 +22,7 @@
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="../css/style.css?v=7">
+  <link rel="stylesheet" href="../css/style.css?v=10">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -42,26 +41,26 @@
         <ul class="nav-menu" id="nav-menu-list">
           <div class="nav-left">
             <li>
-            <a href="accommodation.html" class="nav-link" id="nav-accommodation">Accommodation</a>
-          </li>
+              <a href="accommodation.html" class="nav-link" id="nav-accommodation">Accommodation</a>
+            </li>
             <li>
-            <a href="pricing.html" class="nav-link" id="nav-pricing">Pricing</a>
-          </li>
+              <a href="pricing.html" class="nav-link" id="nav-pricing">Pricing</a>
+            </li>
           </div>
           <div class="nav-right">
             <li>
-            <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
-          </li>
+              <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
+            </li>
             <li>
-            <a href="contact.html" class="nav-link active" id="nav-contact">Contact</a>
-          </li>
+              <a href="booking.html" class="nav-link active" id="nav-contact">Booking</a>
+            </li>
           </div>
         </ul>
       </nav>
 
       <div style="display: flex; align-items: center; gap: 16px;">
         <div class="lang-switch" id="language-switcher">
-          <a href="../kontakt.html" class="lang-btn" id="lang-btn-sr">SR</a>
+          <a href="../rezervacija.html" class="lang-btn" id="lang-btn-sr">SR</a>
           <a href="#" class="lang-btn active" id="lang-btn-en">EN</a>
         </div>
 
@@ -77,14 +76,60 @@
   <!-- Page Header -->
   <section class="page-header" id="contact-header">
     <div class="container">
-      <h1>Contact Us</h1>
-      <p>We are here to answer all your questions. Write to us, call us, or visit our villa.</p>
+      <h1>Booking</h1>
+      <p>Book your stay quickly and easily. For any additional questions, feel free to contact us.</p>
     </div>
   </section>
 
   <!-- Main Content -->
   <section class="section" id="contact-info-section">
     <div class="container">
+
+      <div class="booking-widget-container" style="margin-bottom: 40px; position: relative; z-index: 100;">
+        <div class="w-100 engine-widget-custom-css" id="engineForm"></div>
+      </div>
+
+      <!-- OTA Sync Native Widget Scripts -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      <script id="ew-1" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+      <script type="text/javascript" src="https://app.otasync.me/utils/engineWidget/v3/script.js?v=16"></script>
+      <script>
+        $(document).ready(function () {
+          if (typeof displayEngineForm === 'function') {
+            displayEngineForm("#engineForm", "4829", "#1a1a1a", "#ffffff", {
+              view: "horizontal",
+              fixedTopPosition: false,
+              fixedBottomPosition: false,
+              enableChildren: true,
+              enablePromo: false,
+              language: "en",
+              gradient: "",
+              backgroundImage: "",
+              searchButtonBackgroundColor: "#c9a84c",
+              calendarDrops: "down",
+              propertyType: "single",
+              borderRadius: "12",
+              inputBorderRadius: "8",
+              buttonBorderRadius: "50",
+              widgetBorderColor: "#c9a84c",
+              inputBorderColor: "#3b3b3b",
+              buttonBorderColor: "#c9a84c",
+              widgetBorderThickness: "1",
+              inputBorderThickness: "1",
+              buttonBorderThickness: "0",
+              textAlignment: "center",
+              height: "",
+              widgetXPadding: "32",
+              widgetYPadding: "24",
+              enableDropdownGuest: false,
+              openInEngineSameTab: false,
+              custom_domain: "",
+              openEngineInPopup: false
+            });
+            document.getElementById('engineForm').style.fontFamily = 'Inter, sans-serif';
+          }
+        });
+      </script>
 
       <div class="contact-grid">
 
@@ -115,7 +160,6 @@
                 <p>info@vilakruna.rs</p>
               </div>
             </li>
-
           </ul>
         </div>
 
@@ -204,7 +248,7 @@
             <li><a href="accommodation.html" class="footer-link">Rooms & Accommodation</a></li>
             <li><a href="pricing.html" class="footer-link">Pricing</a></li>
             <li><a href="gallery.html" class="footer-link">Gallery</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="booking.html" class="footer-link">Booking</a></li>
           </ul>
         </div>
 
@@ -213,8 +257,7 @@
           <ul class="footer-links">
             <li><a href="accommodation.html" class="footer-link">Our Rooms</a></li>
             <li><a href="pricing.html" class="footer-link">Price Reference</a></li>
-            <li><a href="https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html" target="_blank" rel="noopener"
-                class="footer-link">Booking.com Availability</a></li>
+            <li><a href="booking.html" class="footer-link">Booking</a></li>
           </ul>
         </div>
 

@@ -24,7 +24,7 @@
   <link rel="manifest" href="../assets/favicon/site.webmanifest">
 
   <!-- Styling -->
-  <link rel="stylesheet" href="../css/style.css?v=7">
+  <link rel="stylesheet" href="../css/style.css?v=10">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
@@ -187,19 +187,19 @@
         <ul class="nav-menu" id="nav-menu-list">
           <div class="nav-left">
             <li>
-            <a href="accommodation.html" class="nav-link active" id="nav-accommodation">Accommodation</a>
-          </li>
+              <a href="accommodation.html" class="nav-link active" id="nav-accommodation">Accommodation</a>
+            </li>
             <li>
-            <a href="pricing.html" class="nav-link" id="nav-pricing">Pricing</a>
-          </li>
+              <a href="pricing.html" class="nav-link" id="nav-pricing">Pricing</a>
+            </li>
           </div>
           <div class="nav-right">
             <li>
-            <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
-          </li>
+              <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
+            </li>
             <li>
-            <a href="contact.html" class="nav-link" id="nav-contact">Contact</a>
-          </li>
+              <a href="booking.html" class="nav-link" id="nav-contact">Booking</a>
+            </li>
           </div>
         </ul>
       </nav>
@@ -230,161 +230,6 @@
   <!-- Main Content -->
   <section class="section" id="accommodation-list-section">
     <div class="container">
-
-      <!-- Room Type 1: Standard Room -->
-      <div class="room-detail-card" id="room-detail-standard">
-        <div class="room-gallery-wrapper">
-          <div class="room-main-img" id="standard-main-view"
-            style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeDWmGdM51KQbfROnw2i9JW8tvksrZUMVBCPly');"></div>
-          <div class="room-thumbnails">
-            <div class="room-thumb active"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeDWmGdM51KQbfROnw2i9JW8tvksrZUMVBCPly');"
-              onclick="changeRoomImage('standard-main-view', this)">
-            </div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeJc20Y0ZDNoA42WU9F7v0bmGizdBhfsLQYn1R');"
-              onclick="changeRoomImage('standard-main-view', this)"></div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeliRlQTY43o2rhvXi6WazDQ9IB51uFONndpYx');"
-              onclick="changeRoomImage('standard-main-view', this)"></div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJe20uWLKsjWxN9zdEUKa1O4mc8He07DiboJvLk');"
-              onclick="changeRoomImage('standard-main-view', this)"></div>
-          </div>
-        </div>
-        <div class="room-details-side">
-          <div>
-            <div class="room-meta-tags">
-              <span class="room-meta-tag"><i class="fa-solid fa-bed"></i> &nbsp;Room</span>
-              <span class="room-meta-tag"><i class="fa-solid fa-users"></i> &nbsp;1-3 Guests</span>
-              <span class="room-meta-tag"><i class="fa-solid fa-square-parking"></i> &nbsp;Free Parking</span>
-            </div>
-            <h2 class="room-title-large">Standard Room with Sofa</h2>
-            <p class="room-long-desc">This 30m² room is equipped with two comfortable single beds and an additional
-              pull-out sofa. Located on a higher floor, it provides a quiet atmosphere and is equipped with all
-              necessary amenities for a pleasant stay.</p>
-            <div class="room-specs-list">
-              <div class="room-spec-item"><i class="fa-solid fa-expand"></i> <span>30 m²</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-snowflake"></i> <span>Air conditioning</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-bath"></i> <span>Ensuite Bath</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-tv"></i> <span>Flat-screen TV</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-volume-xmark"></i> <span>Soundproofing</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-wifi"></i> <span>Free WiFi</span></div>
-            </div>
-          </div>
-          <div class="room-booking-panel">
-            <div class="room-price">
-              From <span>2.800 RSD</span>
-            </div>
-            <a href="https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html" target="_blank" rel="noopener"
-              class="btn btn-primary" id="book-standard-cta">Book on Booking.com &rarr;</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Room Type 2: Economy Double Room -->
-      <div class="room-detail-card" id="room-detail-economy">
-        <div class="room-gallery-wrapper">
-          <div class="room-main-img" id="economy-main-view"
-            style="background-image: url('https://utfs.io/f/7BAyoiVHGCJek2lZAl8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd');"></div>
-          <div class="room-thumbnails">
-            <div class="room-thumb active"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJek2lZAl8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd');"
-              onclick="changeRoomImage('economy-main-view', this)">
-            </div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJe0RzCesuWe7NcOKCQqHpFrEjSG4mLx8iAdMR5');"
-              onclick="changeRoomImage('economy-main-view', this)">
-            </div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeEec9h5rPcXMmaOUj8s7kl0rSzFKd5uGAP3hZ');"
-              onclick="changeRoomImage('economy-main-view', this)">
-            </div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeDWR0zaI1KQbfROnw2i9JW8tvksrZUMVBCPly');"
-              onclick="changeRoomImage('economy-main-view', this)">
-            </div>
-          </div>
-        </div>
-        <div class="room-details-side">
-          <div>
-            <div class="room-meta-tags">
-              <span class="room-meta-tag"><i class="fa-solid fa-bed"></i> &nbsp;Room</span>
-              <span class="room-meta-tag"><i class="fa-solid fa-users"></i> &nbsp;1-2 Guests</span>
-              <span class="room-meta-tag"><i class="fa-solid fa-square-parking"></i> &nbsp;Free Parking</span>
-            </div>
-            <h2 class="room-title-large">Economy Double Room</h2>
-            <p class="room-long-desc">Our 30m² economy room offers excellent comfort at an affordable price. It features
-              one extra-large double bed and is ideal for couples and short city stays.</p>
-            <div class="room-specs-list">
-              <div class="room-spec-item"><i class="fa-solid fa-expand"></i> <span>30 m²</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-snowflake"></i> <span>Air conditioning</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-bath"></i> <span>Ensuite Bath</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-tv"></i> <span>Flat-screen TV</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-volume-xmark"></i> <span>Soundproofing</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-wifi"></i> <span>Free WiFi</span></div>
-            </div>
-          </div>
-          <div class="room-booking-panel">
-            <div class="room-price">
-              From <span>3.300 RSD</span>
-            </div>
-            <a href="https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html" target="_blank" rel="noopener"
-              class="btn btn-primary" id="book-economy-cta">Book on Booking.com &rarr;</a>
-          </div>
-        </div>
-      </div>
-
-      <!-- Room Type 3: Deluxe Double Room -->
-      <div class="room-detail-card" id="room-detail-deluxe">
-        <div class="room-gallery-wrapper">
-          <div class="room-main-img" id="deluxe-main-view"
-            style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeFPB87c9AMREUBHCxdcopg2rX5AJteL8a9kwZ');"></div>
-          <div class="room-thumbnails">
-            <div class="room-thumb active"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeFPB87c9AMREUBHCxdcopg2rX5AJteL8a9kwZ');"
-              onclick="changeRoomImage('deluxe-main-view', this)"></div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeiVuWtGhre7CqBzTYIkpGSxyQ0f6Pu24NvgFZ');"
-              onclick="changeRoomImage('deluxe-main-view', this)"></div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJetedZrS3gEFV8uPekhloUQDIBTXZRYH4riAm2');"
-              onclick="changeRoomImage('deluxe-main-view', this)">
-            </div>
-            <div class="room-thumb"
-              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJePomEg5Hx8IiVXgY2mu5rspelTc6EkNGOdya1');"
-              onclick="changeRoomImage('deluxe-main-view', this)">
-            </div>
-          </div>
-        </div>
-        <div class="room-details-side">
-          <div>
-            <div class="room-meta-tags">
-              <span class="room-meta-tag"><i class="fa-solid fa-bed"></i> &nbsp;Deluxe</span>
-              <span class="room-meta-tag"><i class="fa-solid fa-users"></i> &nbsp;1-3 Guests</span>
-              <span class="room-meta-tag"><i class="fa-solid fa-square-parking"></i> &nbsp;Free Parking</span>
-            </div>
-            <h2 class="room-title-large">Deluxe Double/Twin Room</h2>
-            <p class="room-long-desc">The more spacious 35m² deluxe room is perfect for guests who like more space. It is equipped with
-              a double bed and a comfortable pull-out sofa.</p>
-            <div class="room-specs-list">
-              <div class="room-spec-item"><i class="fa-solid fa-expand"></i> <span>35 m²</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-snowflake"></i> <span>Air conditioning</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-bath"></i> <span>Ensuite Bath</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-tv"></i> <span>Flat-screen TV</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-volume-xmark"></i> <span>Soundproofing</span></div>
-              <div class="room-spec-item"><i class="fa-solid fa-wifi"></i> <span>Free WiFi</span></div>
-            </div>
-          </div>
-          <div class="room-booking-panel">
-            <div class="room-price">
-              From <span>3.500 RSD</span>
-            </div>
-            <a href="https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html" target="_blank" rel="noopener"
-              class="btn btn-primary" id="book-deluxe-cta">Book on Booking.com &rarr;</a>
-          </div>
-        </div>
-      </div>
 
       <!-- Room Type 4: Superior Room -->
       <div class="room-detail-card" id="room-detail-superior">
@@ -436,8 +281,160 @@
             <div class="room-price">
               From <span>5.750 RSD</span>
             </div>
-            <a href="https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html" target="_blank" rel="noopener"
-              class="btn btn-primary" id="book-superior-cta">Book on Booking.com &rarr;</a>
+            <a href="booking.html" class="btn btn-primary" id="book-superior-cta">Book Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room Type 3: Deluxe Double Room -->
+      <div class="room-detail-card" id="room-detail-deluxe">
+        <div class="room-gallery-wrapper">
+          <div class="room-main-img" id="deluxe-main-view"
+            style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeFPB87c9AMREUBHCxdcopg2rX5AJteL8a9kwZ');"></div>
+          <div class="room-thumbnails">
+            <div class="room-thumb active"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeFPB87c9AMREUBHCxdcopg2rX5AJteL8a9kwZ');"
+              onclick="changeRoomImage('deluxe-main-view', this)"></div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeiVuWtGhre7CqBzTYIkpGSxyQ0f6Pu24NvgFZ');"
+              onclick="changeRoomImage('deluxe-main-view', this)"></div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJetedZrS3gEFV8uPekhloUQDIBTXZRYH4riAm2');"
+              onclick="changeRoomImage('deluxe-main-view', this)">
+            </div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJePomEg5Hx8IiVXgY2mu5rspelTc6EkNGOdya1');"
+              onclick="changeRoomImage('deluxe-main-view', this)">
+            </div>
+          </div>
+        </div>
+        <div class="room-details-side">
+          <div>
+            <div class="room-meta-tags">
+              <span class="room-meta-tag"><i class="fa-solid fa-bed"></i> &nbsp;Deluxe</span>
+              <span class="room-meta-tag"><i class="fa-solid fa-users"></i> &nbsp;1-3 Guests</span>
+              <span class="room-meta-tag"><i class="fa-solid fa-square-parking"></i> &nbsp;Free Parking</span>
+            </div>
+            <h2 class="room-title-large">Deluxe Double/Twin Room</h2>
+            <p class="room-long-desc">The more spacious 35m² deluxe room is perfect for guests who like more space. It
+              is equipped with
+              a double bed and a comfortable pull-out sofa.</p>
+            <div class="room-specs-list">
+              <div class="room-spec-item"><i class="fa-solid fa-expand"></i> <span>35 m²</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-snowflake"></i> <span>Air conditioning</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-bath"></i> <span>Ensuite Bath</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-tv"></i> <span>Flat-screen TV</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-volume-xmark"></i> <span>Soundproofing</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-wifi"></i> <span>Free WiFi</span></div>
+            </div>
+          </div>
+          <div class="room-booking-panel">
+            <div class="room-price">
+              From <span>3.500 RSD</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary" id="book-deluxe-cta">Book Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room Type 2: Economy Double Room -->
+      <div class="room-detail-card" id="room-detail-economy">
+        <div class="room-gallery-wrapper">
+          <div class="room-main-img" id="economy-main-view"
+            style="background-image: url('https://utfs.io/f/7BAyoiVHGCJek2lZAl8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd');"></div>
+          <div class="room-thumbnails">
+            <div class="room-thumb active"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJek2lZAl8hFBCH2ptAzIf1nmqS9eRyl4Xo7Qjd');"
+              onclick="changeRoomImage('economy-main-view', this)">
+            </div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJe0RzCesuWe7NcOKCQqHpFrEjSG4mLx8iAdMR5');"
+              onclick="changeRoomImage('economy-main-view', this)">
+            </div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeEec9h5rPcXMmaOUj8s7kl0rSzFKd5uGAP3hZ');"
+              onclick="changeRoomImage('economy-main-view', this)">
+            </div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeDWR0zaI1KQbfROnw2i9JW8tvksrZUMVBCPly');"
+              onclick="changeRoomImage('economy-main-view', this)">
+            </div>
+          </div>
+        </div>
+        <div class="room-details-side">
+          <div>
+            <div class="room-meta-tags">
+              <span class="room-meta-tag"><i class="fa-solid fa-bed"></i> &nbsp;Room</span>
+              <span class="room-meta-tag"><i class="fa-solid fa-users"></i> &nbsp;1-2 Guests</span>
+              <span class="room-meta-tag"><i class="fa-solid fa-square-parking"></i> &nbsp;Free Parking</span>
+            </div>
+            <h2 class="room-title-large">Economy Double Room</h2>
+            <p class="room-long-desc">Our 30m² economy room offers excellent comfort at an affordable price. It features
+              one extra-large double bed and is ideal for couples and short city stays.</p>
+            <div class="room-specs-list">
+              <div class="room-spec-item"><i class="fa-solid fa-expand"></i> <span>30 m²</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-snowflake"></i> <span>Air conditioning</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-bath"></i> <span>Ensuite Bath</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-tv"></i> <span>Flat-screen TV</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-volume-xmark"></i> <span>Soundproofing</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-wifi"></i> <span>Free WiFi</span></div>
+            </div>
+          </div>
+          <div class="room-booking-panel">
+            <div class="room-price">
+              From <span>3.300 RSD</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary" id="book-economy-cta">Book Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Room Type 1: Standard Room -->
+      <div class="room-detail-card" id="room-detail-standard">
+        <div class="room-gallery-wrapper">
+          <div class="room-main-img" id="standard-main-view"
+            style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeDWmGdM51KQbfROnw2i9JW8tvksrZUMVBCPly');"></div>
+          <div class="room-thumbnails">
+            <div class="room-thumb active"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeDWmGdM51KQbfROnw2i9JW8tvksrZUMVBCPly');"
+              onclick="changeRoomImage('standard-main-view', this)">
+            </div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeJc20Y0ZDNoA42WU9F7v0bmGizdBhfsLQYn1R');"
+              onclick="changeRoomImage('standard-main-view', this)"></div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJeliRlQTY43o2rhvXi6WazDQ9IB51uFONndpYx');"
+              onclick="changeRoomImage('standard-main-view', this)"></div>
+            <div class="room-thumb"
+              style="background-image: url('https://utfs.io/f/7BAyoiVHGCJe20uWLKsjWxN9zdEUKa1O4mc8He07DiboJvLk');"
+              onclick="changeRoomImage('standard-main-view', this)"></div>
+          </div>
+        </div>
+        <div class="room-details-side">
+          <div>
+            <div class="room-meta-tags">
+              <span class="room-meta-tag"><i class="fa-solid fa-bed"></i> &nbsp;Room</span>
+              <span class="room-meta-tag"><i class="fa-solid fa-users"></i> &nbsp;1-3 Guests</span>
+              <span class="room-meta-tag"><i class="fa-solid fa-square-parking"></i> &nbsp;Free Parking</span>
+            </div>
+            <h2 class="room-title-large">Standard Room with Sofa</h2>
+            <p class="room-long-desc">This 30m² room is equipped with two comfortable single beds and an additional
+              pull-out sofa. Located on a higher floor, it provides a quiet atmosphere and is equipped with all
+              necessary amenities for a pleasant stay.</p>
+            <div class="room-specs-list">
+              <div class="room-spec-item"><i class="fa-solid fa-expand"></i> <span>30 m²</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-snowflake"></i> <span>Air conditioning</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-bath"></i> <span>Ensuite Bath</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-tv"></i> <span>Flat-screen TV</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-volume-xmark"></i> <span>Soundproofing</span></div>
+              <div class="room-spec-item"><i class="fa-solid fa-wifi"></i> <span>Free WiFi</span></div>
+            </div>
+          </div>
+          <div class="room-booking-panel">
+            <div class="room-price">
+              From <span>2.800 RSD</span>
+            </div>
+            <a href="booking.html" class="btn btn-primary" id="book-standard-cta">Book Now &rarr;</a>
           </div>
         </div>
       </div>
@@ -467,7 +464,7 @@
             <li><a href="accommodation.html" class="footer-link">Rooms & Accommodation</a></li>
             <li><a href="pricing.html" class="footer-link">Pricing</a></li>
             <li><a href="gallery.html" class="footer-link">Gallery</a></li>
-            <li><a href="contact.html" class="footer-link">Contact</a></li>
+            <li><a href="booking.html" class="footer-link">Booking</a></li>
           </ul>
         </div>
 
@@ -476,8 +473,7 @@
           <ul class="footer-links">
             <li><a href="accommodation.html" class="footer-link">Our Rooms</a></li>
             <li><a href="pricing.html" class="footer-link">Price Reference</a></li>
-            <li><a href="https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html" target="_blank" rel="noopener"
-                class="footer-link">Booking.com Availability</a></li>
+            <li><a href="booking.html" class="footer-link">Booking</a></li>
           </ul>
         </div>
 

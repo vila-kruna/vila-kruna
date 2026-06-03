@@ -67,18 +67,18 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Contact -->
+  <!-- Booking -->
   <url>
-    <loc>https://vilakruna.rs/kontakt.html</loc>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/kontakt.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/contact.html" />
+    <loc>https://vilakruna.rs/rezervacija.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/rezervacija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/booking.html" />
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://vilakruna.rs/en/contact.html</loc>
-    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/kontakt.html" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/contact.html" />
+    <loc>https://vilakruna.rs/en/booking.html</loc>
+    <xhtml:link rel="alternate" hreflang="sr" href="https://vilakruna.rs/rezervacija.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/booking.html" />
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>

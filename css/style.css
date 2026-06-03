@@ -1613,3 +1613,171 @@ textarea.form-control {
     background-image: var(--bg-sm) !important;
   }
 }
+
+/* --- OTA Sync Booking Widget Custom Styles --- */
+#engineForm .engine-widget-container {
+  background: transparent !important;
+}
+
+#engineForm input.form-control,
+#engineForm select.form-control,
+#engineForm .datepicker-here,
+#engineForm input[type="text"] {
+  background-color: #17191D !important;
+  color: #F3F4F6 !important;
+  border: 1px solid #22252C !important;
+  border-radius: 8px !important;
+  padding: 14px 16px !important;
+  transition: all 0.3s ease !important;
+  box-shadow: none !important;
+}
+
+#engineForm input.form-control:focus,
+#engineForm select.form-control:focus,
+#engineForm .datepicker-here:focus,
+#engineForm input[type="text"]:focus {
+  border-color: #C5A059 !important;
+  background-color: #1C2027 !important;
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.15) !important;
+  outline: none !important;
+}
+
+#engineForm .form-label {
+  color: #9CA3AF !important;
+  font-weight: 500 !important;
+  margin-bottom: 6px !important;
+}
+
+/* "PRETRAGA" button matching golden buttons */
+#engineForm .submit-btn,
+#engineForm button[type="submit"] {
+  background-color: #C5A059 !important;
+  color: #121418 !important;
+  border-radius: 50px !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  padding: 14px 28px !important;
+  border: 2px solid transparent !important;
+  box-shadow: 0 4px 14px rgba(197, 160, 89, 0.25) !important;
+  transition: all 0.3s ease !important;
+  width: 100% !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.5px !important;
+}
+
+#engineForm .submit-btn:hover,
+#engineForm button[type="submit"]:hover {
+  background: linear-gradient(120deg, #C5A059 0%, #F3D470 30%, #E5C158 70%, #C5A059 100%) !important;
+  background-size: 200% auto !important;
+  color: #121418 !important;
+  transform: translateY(-2px) !important;
+  box-shadow: 0 6px 20px rgba(197, 160, 89, 0.35) !important;
+  animation: goldShine 2s linear infinite !important;
+}
+
+/* Increment/Decrement buttons fix */
+#engineForm .btn-increment,
+#engineForm .btn-decrement,
+#engineForm .btn.m-toggle-btn,
+#engineForm .input-group-text,
+#engineForm .input-group-prepend button,
+#engineForm .input-group-append button {
+  background-color: transparent !important;
+  color: #F3F4F6 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#engineForm .btn-increment:hover,
+#engineForm .btn-decrement:hover,
+#engineForm .input-group-prepend button:hover,
+#engineForm .input-group-append button:hover {
+  background-color: #1C2027 !important;
+  color: #C5A059 !important;
+}
+
+/* Date Range Picker calendar popup styling */
+.daterangepicker {
+  background-color: #17191D !important;
+  border: 1px solid #22252C !important;
+  border-radius: 12px !important;
+  color: #F3F4F6 !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5) !important;
+  font-family: 'Inter', sans-serif !important;
+}
+
+.daterangepicker::before,
+.daterangepicker::after {
+  display: none !important;
+}
+
+.daterangepicker .calendar-table {
+  background-color: #17191D !important;
+  border: none !important;
+}
+
+.daterangepicker td.off, 
+.daterangepicker td.off.in-range, 
+.daterangepicker td.off.start-date, 
+.daterangepicker td.off.end-date {
+  background-color: #17191D !important;
+  color: #4B5563 !important;
+}
+
+.daterangepicker td.available:hover, 
+.daterangepicker th.available:hover {
+  background-color: #1C2027 !important;
+  color: #C5A059 !important;
+  border-radius: 4px !important;
+}
+
+.daterangepicker td.in-range {
+  background-color: rgba(197, 160, 89, 0.15) !important;
+  color: #F3F4F6 !important;
+  border-radius: 0 !important;
+}
+
+.daterangepicker td.active, 
+.daterangepicker td.active:hover {
+  background-color: #C5A059 !important;
+  color: #121418 !important;
+  border-color: transparent !important;
+  border-radius: 4px !important;
+}
+
+.daterangepicker select.monthselect, 
+.daterangepicker select.yearselect {
+  background-color: #1C2027 !important;
+  color: #F3F4F6 !important;
+  border: 1px solid #22252C !important;
+  border-radius: 4px !important;
+  padding: 2px 4px !important;
+}
+
+.daterangepicker .drp-buttons {
+  border-top: 1px solid #22252C !important;
+  background-color: #17191D !important;
+}
+
+.daterangepicker .cancelBtn {
+  background-color: transparent !important;
+  color: #9CA3AF !important;
+  border: 1px solid #4B5563 !important;
+  transition: all 0.2s ease !important;
+}
+
+.daterangepicker .cancelBtn:hover {
+  background-color: #1C2027 !important;
+  color: #F3F4F6 !important;
+}
+
+.daterangepicker .applyBtn {
+  background-color: #C5A059 !important;
+  color: #121418 !important;
+  border: none !important;
+  transition: all 0.2s ease !important;
+}
+
+.daterangepicker .applyBtn:hover {
+  background-color: #A37E3B !important;
+}
