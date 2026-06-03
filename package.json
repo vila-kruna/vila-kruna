@@ -1,0 +1,9 @@
+{
+  "name": "vila-kruna",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/build-blog-index.js",
+    "dev": "npm run build && serve ."
+  }
+}

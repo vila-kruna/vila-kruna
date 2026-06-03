@@ -4,17 +4,26 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Photo Gallery — Vila Kruna Belgrade</title>
-  <meta name="description"
-    content="Browse Vila Kruna photo gallery. High-resolution images of the exterior, modern rooms, and stylish bathrooms.">
+  <title>News — Vila Kruna | Accommodation in Belgrade</title>
 
-  <!-- Hreflang Tags for multilingual SEO -->
-  <link rel="alternate" hreflang="sr" href="https://vilakruna.rs/galerija.html" />
-  <link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/gallery.html" />
-  <link rel="alternate" hreflang="x-default" href="https://vilakruna.rs/galerija.html" />
+  <meta name="description"
+    content="Stay up to date with the latest news, offers and events at Vila Kruna — accommodation and motel in Rakovica, Belgrade.">
+
+  <!-- Hreflang Tags -->
+  <link rel="alternate" hreflang="sr" href="https://vilakruna.rs/novosti" />
+  <link rel="alternate" hreflang="en" href="https://vilakruna.rs/en/news" />
+  <link rel="alternate" hreflang="x-default" href="https://vilakruna.rs/novosti" />
 
   <!-- Canonical URL -->
-  <link rel="canonical" href="https://vilakruna.rs/en/gallery.html" />
+  <link rel="canonical" href="https://vilakruna.rs/en/news" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="News — Vila Kruna">
+  <meta property="og:description"
+    content="Stay up to date with the latest news, offers and events at Vila Kruna — accommodation in Belgrade.">
+  <meta property="og:url" content="https://vilakruna.rs/en/news">
+  <meta name="robots" content="index, follow">
+
   <!-- Favicons -->
   <link rel="icon" type="image/x-icon" href="../assets/favicon/favicon.ico">
   <link rel="icon" type="image/png" sizes="96x96" href="../assets/favicon/favicon-96x96.png">
@@ -24,6 +33,8 @@
 
   <!-- Styling -->
   <link rel="stylesheet" href="../css/style.css?v=10">
+
+  <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -50,10 +61,10 @@
           </div>
           <div class="nav-right">
             <li>
-              <a href="gallery.html" class="nav-link active" id="nav-gallery">Gallery</a>
+              <a href="gallery.html" class="nav-link" id="nav-gallery">Gallery</a>
             </li>
             <li>
-              <a href="news.html" class="nav-link" id="nav-news">News</a>
+              <a href="news.html" class="nav-link active" id="nav-news">News</a>
             </li>
             <li>
               <a href="booking.html" class="nav-link" id="nav-contact">Booking</a>
@@ -64,7 +75,7 @@
 
       <div style="display: flex; align-items: center; gap: 16px;">
         <div class="lang-switch" id="language-switcher">
-          <a href="../galerija.html" class="lang-btn" id="lang-btn-sr">SR</a>
+          <a href="../novosti.html" class="lang-btn" id="lang-btn-sr">SR</a>
           <a href="#" class="lang-btn active" id="lang-btn-en">EN</a>
         </div>
 
@@ -78,47 +89,18 @@
   </header>
 
   <!-- Page Header -->
-  <section class="page-header" id="gallery-header">
+  <section class="page-header" id="news-hero">
     <div class="container">
-      <h1>Photo Gallery</h1>
-      <p>Take a virtual tour of our property through photos and feel the warm atmosphere of Vila Kruna.</p>
+      <h1>News</h1>
+      <p class="page-header-subtitle">Stay up to date with the latest news, offers and events at Vila Kruna.</p>
     </div>
   </section>
 
-  <!-- Main Content -->
-  <section class="section" id="gallery-section">
+  <!-- Blog Listing -->
+  <section class="section" id="blog-section">
     <div class="container">
-
-      <!-- Category Filter Tabs -->
-      <div class="gallery-filters" id="gallery-tabs">
-        <button class="filter-btn active" data-filter="all">All</button>
-        <button class="filter-btn" data-filter="enterijer">Interior</button>
-        <button class="filter-btn" data-filter="sobe">Rooms</button>
-        <button class="filter-btn" data-filter="kupatilo">Bathrooms</button>
-        <button class="filter-btn" data-filter="sauna">Sauna</button>
-        <button class="filter-btn" data-filter="eksterijer">Exterior</button>
-      </div>
-
-      <!-- Masonry-like Photo Grid -->
-      <div class="gallery-grid" id="main-gallery-grid">
-        <!-- Will be dynamically populated via JS -->
-      </div>
-
-      <!-- Load More Button -->
-      <div class="text-center" id="load-more-container" style="margin-top: 45px; display: none;">
-        <button class="btn btn-secondary" id="load-more-btn">
-          <i class="fa-solid fa-images" style="margin-right: 8px;"></i>
-          <span>View more</span>
-        </button>
-      </div>
-
-      <div class="text-center" style="margin-top: 50px;">
-        <a href="booking.html" class="btn btn-primary" id="gallery-cta-booking">
-          <i class="fa-solid fa-calendar-check"></i>
-          <span>Check Available Dates</span>
-        </a>
-      </div>
-
+      <div id="blog-listing"></div>
+      <div id="blog-post-content" style="display: none;"></div>
     </div>
   </section>
 
@@ -126,6 +108,7 @@
   <footer class="footer" id="main-footer">
     <div class="container">
       <div class="footer-grid">
+        <!-- Col 1 -->
         <div class="footer-col footer-about">
           <h3>Vila Kruna</h3>
           <p>Your peaceful corner in Belgrade. Newly furnished rooms created for supreme relaxation.</p>
@@ -137,6 +120,7 @@
           </div>
         </div>
 
+        <!-- Col 2 -->
         <div class="footer-col">
           <h4>Navigation</h4>
           <ul class="footer-links">
@@ -149,6 +133,7 @@
           </ul>
         </div>
 
+        <!-- Col 3 -->
         <div class="footer-col">
           <h4>Accommodation</h4>
           <ul class="footer-links">
@@ -158,6 +143,7 @@
           </ul>
         </div>
 
+        <!-- Col 4 -->
         <div class="footer-col">
           <h4>Contact Info</h4>
           <ul class="footer-contact-list">
@@ -184,7 +170,12 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="../js/main.js?v=2"></script>
+  <!-- TODO(security): Pin exact versions and add SRI hashes for CDN scripts in production -->
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/dompurify/dist/purify.min.js"></script>
+  <script src="../js/dynamic-content.js?v=1"></script>
 </body>
 
 </html>
