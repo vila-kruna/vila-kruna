@@ -4,9 +4,8 @@ backend:
   repo: owner/repo-name
   branch: master
 
-local_backend: true
 
-media_folder: "content/blog/images"
+media_folder: "public/content/blog/images"
 public_folder: "/content/blog/images"
 
 i18n:
@@ -19,7 +18,7 @@ collections:
   - name: blog
     label: "Novosti / News"
     icon: article
-    folder: "content/blog"
+    folder: "public/content/blog"
     create: true
     slug: "{{slug}}"
     extension: "md"
@@ -38,7 +37,7 @@ collections:
     files:
       - name: promo
         label: "Promo Banner"
-        file: "content/settings/promo.json"
+        file: "public/content/settings/promo.json"
         fields:
           - { label: "Prikaži / Enabled", name: "enabled", widget: "boolean", default: false }
           - { label: "Tekst (Srpski)", name: "text_sr", widget: "string", required: false }
@@ -49,7 +48,7 @@ collections:
 
       - name: announcement
         label: "Objava / Announcement"
-        file: "content/settings/announcement.json"
+        file: "public/content/settings/announcement.json"
         fields:
           - { label: "Prikaži / Enabled", name: "enabled", widget: "boolean", default: false }
           - { label: "Naslov (Srpski)", name: "title_sr", widget: "string", required: false }

@@ -4,6 +4,7 @@ import "../globals.css";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import PromoBanner from "../components/PromoBanner";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 const inter = Inter({
   subsets: ['latin'],
@@ -62,6 +63,7 @@ export default function RootLayout({
         </main>
 
         <Footer lang="sr" />
+        {process.env.NEXT_PUBLIC_GA_ID && <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID} />}
       </body>
     </html>
   );
