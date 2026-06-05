@@ -1,7 +1,0 @@
-# www.robotstxt.org/
-
-User-agent: *
-Allow: /
-
-# Sitemap Location Declaration
-Sitemap: https://vilakruna.rs/sitemap.xml
