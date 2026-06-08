@@ -26,7 +26,7 @@ export default function NewsPage() {
           ) : (
             <div className="news-grid" style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '30px' }}>
               {posts.map(post => (
-                <div key={post.slug} className="news-card" style={{ backgroundColor: '#fff', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
+                <div key={post.slug} className="news-card" style={{ backgroundColor: 'var(--white)', border: '1px solid var(--border-color)', borderRadius: '12px', overflow: 'hidden', boxShadow: '0 4px 15px rgba(0,0,0,0.05)' }}>
                   {post.thumbnail && (
                     <div className="news-img" style={{ height: '200px', backgroundImage: `url('${post.thumbnail}')`, backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
                   )}
