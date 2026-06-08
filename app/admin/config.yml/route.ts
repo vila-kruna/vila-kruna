@@ -1,9 +1,11 @@
-# TODO(security): Update backend repo to client's GitHub when deploying to production
+import { NextResponse } from 'next/server';
+
+export async function GET() {
+  const yamlConfig = `# TODO(security): Update backend repo to client's GitHub when deploying to production
 backend:
   name: github
-  repo: owner/repo-name
-  branch: master
-
+  repo: ${process.env.NEXT_PUBLIC_GITHUB_REPO || 'owner/repo-name'}
+  branch: ${process.env.NEXT_PUBLIC_GITHUB_BRANCH || 'master'}
 
 media_folder: "public/content/blog/images"
 public_folder: "/content/blog/images"
@@ -59,3 +61,12 @@ collections:
           - { label: "Link", name: "link", widget: "string", required: false }
           - { label: "Tekst linka (Srpski)", name: "link_text_sr", widget: "string", default: "Saznaj više" }
           - { label: "Link Text (English)", name: "link_text_en", widget: "string", default: "Learn more" }
+`;
+
+  return new NextResponse(yamlConfig, {
+    headers: {
+      'Content-Type': 'text/yaml',
+      'Cache-Control': 'public, max-age=0, must-revalidate',
+    },
+  });
+}
