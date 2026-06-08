@@ -1,5 +1,7 @@
 import { NextResponse } from 'next/server';
 
+export const dynamic = 'force-static';
+
 export async function GET() {
   const yamlConfig = `# TODO(security): Update backend repo to client's GitHub when deploying to production
 backend:
