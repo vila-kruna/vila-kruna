@@ -1812,7 +1812,8 @@ textarea.form-control {
 .promo-banner {
   width: 100%;
   padding: 12px 0;
-  z-index: 900;
+  z-index: 1001;
+  position: relative;
   animation: slideDown 0.4s ease-out;
 }
 
