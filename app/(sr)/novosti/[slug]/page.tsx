@@ -6,6 +6,8 @@ import Link from 'next/link';
 
 export async function generateStaticParams() {
   const posts = getAllPosts('sr');
+  if (posts.length === 0) return [{ slug: 'empty' }];
+  
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -69,8 +71,8 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
 
       <section className="section" style={{ padding: '60px 0' }}>
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
-          <div 
-            className="prose prose-lg" 
+          <div
+            className="prose prose-lg"
             style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
