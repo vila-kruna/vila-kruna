@@ -1,0 +1,74 @@
+import { NextResponse } from 'next/server';
+
+export const dynamic = 'force-static';
+
+export async function GET() {
+  const yamlConfig = `# TODO(security): Update backend repo to client's GitHub when deploying to production
+backend:
+  name: github
+  repo: ${process.env.NEXT_PUBLIC_GITHUB_REPO || 'owner/repo-name'}
+  branch: ${process.env.NEXT_PUBLIC_GITHUB_BRANCH || 'master'}
+
+media_folder: "public/content/blog/images"
+public_folder: "/content/blog/images"
+
+i18n:
+  structure: multiple_files
+  locales: [sr, en]
+  default_locale: sr
+
+collections:
+  # Blog / News posts — folder collection
+  - name: blog
+    label: "Novosti / News"
+    icon: article
+    folder: "public/content/blog"
+    create: true
+    slug: "{{slug}}"
+    extension: "md"
+    i18n: true
+    fields:
+      - { label: "Naslov / Title", name: "title", widget: "string", i18n: true }
+      - { label: "Datum / Date", name: "date", widget: "datetime", i18n: duplicate }
+      - { label: "Slika / Image", name: "image", widget: "image", required: false, i18n: duplicate }
+      - { label: "Kratak opis / Summary", name: "summary", widget: "text", i18n: true }
+      - { label: "Tekst / Body", name: "body", widget: "markdown", i18n: true }
+
+  # Site settings — file collection
+  - name: settings
+    label: "Podešavanja Sajta"
+    icon: settings
+    files:
+      - name: promo
+        label: "Promo Banner"
+        file: "public/content/settings/promo.json"
+        fields:
+          - { label: "Prikaži / Enabled", name: "enabled", widget: "boolean", default: false }
+          - { label: "Tekst (Srpski)", name: "text_sr", widget: "string", required: false }
+          - { label: "Text (English)", name: "text_en", widget: "string", required: false }
+          - { label: "Link", name: "link", widget: "string", required: false }
+          - { label: "Boja pozadine / Background Color", name: "bg_color", widget: "color", default: "#2a7d4f" }
+          - { label: "Boja teksta / Text Color", name: "text_color", widget: "color", default: "#ffffff" }
+
+      - name: announcement
+        label: "Objava / Announcement"
+        file: "public/content/settings/announcement.json"
+        fields:
+          - { label: "Prikaži / Enabled", name: "enabled", widget: "boolean", default: false }
+          - { label: "Naslov (Srpski)", name: "title_sr", widget: "string", required: false }
+          - { label: "Title (English)", name: "title_en", widget: "string", required: false }
+          - { label: "Tekst (Srpski)", name: "body_sr", widget: "text", required: false }
+          - { label: "Text (English)", name: "body_en", widget: "text", required: false }
+          - { label: "Slika / Image", name: "image", widget: "image", required: false }
+          - { label: "Link", name: "link", widget: "string", required: false }
+          - { label: "Tekst linka (Srpski)", name: "link_text_sr", widget: "string", default: "Saznaj više" }
+          - { label: "Link Text (English)", name: "link_text_en", widget: "string", default: "Learn more" }
+`;
+
+  return new NextResponse(yamlConfig, {
+    headers: {
+      'Content-Type': 'text/yaml',
+      'Cache-Control': 'public, max-age=0, must-revalidate',
+    },
+  });
+}
