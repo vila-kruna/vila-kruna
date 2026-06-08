@@ -5,4 +5,4 @@ image: /content/blog/images/Gemini_Generated_Image_4tdd874tdd874tdd.png
 summary: Ovo je opis test bloga
 ---
 
-Ovo je tekst test bloga
+Ovo je tekst test bl![](/content/blog/images/apartman2.jpg)
