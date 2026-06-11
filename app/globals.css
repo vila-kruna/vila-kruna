@@ -20,6 +20,7 @@
     --foreground: #ededed;
   }
 }
+
 /* Google Fonts moved to top */
 
 /* Core Variables */
@@ -334,7 +335,8 @@ body.lang-en .lang-sr {
     width: 100%;
   }
 
-  .nav-left, .nav-right {
+  .nav-left,
+  .nav-right {
     display: flex;
     gap: 40px !important;
     flex: 1;
@@ -566,6 +568,8 @@ body.lang-en .lang-sr {
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   aspect-ratio: 4/3;
+  background-size: cover;
+  background-position: top;
   /* background: #EAEAE6 url('../assets/images/about_placeholder.jpg') center/cover no-repeat; */
 }
 
@@ -615,10 +619,21 @@ body.lang-en .lang-sr {
   margin-top: 40px;
 }
 
-#room-card-standard { order: 4; }
-#room-card-economy { order: 3; }
-#room-card-deluks { order: 2; }
-#room-card-superior { order: 1; }
+#room-card-standard {
+  order: 4;
+}
+
+#room-card-economy {
+  order: 3;
+}
+
+#room-card-deluks {
+  order: 2;
+}
+
+#room-card-superior {
+  order: 1;
+}
 
 .room-card {
   background: var(--white);
@@ -995,14 +1010,17 @@ body.lang-en .lang-sr {
   .price-table-wrapper {
     overflow-x: auto;
   }
+
   .price-table th,
   .price-table td {
     padding: 12px 10px;
     font-size: 0.85rem;
   }
+
   .price-table td {
     font-size: 0.9rem;
   }
+
   .price-table td.price-val {
     font-size: 1.05rem;
   }
@@ -1519,7 +1537,8 @@ textarea.form-control {
     z-index: 999;
   }
 
-  .nav-left, .nav-right {
+  .nav-left,
+  .nav-right {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1737,15 +1756,15 @@ textarea.form-control {
   border: none !important;
 }
 
-.daterangepicker td.off, 
-.daterangepicker td.off.in-range, 
-.daterangepicker td.off.start-date, 
+.daterangepicker td.off,
+.daterangepicker td.off.in-range,
+.daterangepicker td.off.start-date,
 .daterangepicker td.off.end-date {
   background-color: #17191D !important;
   color: #4B5563 !important;
 }
 
-.daterangepicker td.available:hover, 
+.daterangepicker td.available:hover,
 .daterangepicker th.available:hover {
   background-color: #1C2027 !important;
   color: #C5A059 !important;
@@ -1758,7 +1777,7 @@ textarea.form-control {
   border-radius: 0 !important;
 }
 
-.daterangepicker td.active, 
+.daterangepicker td.active,
 .daterangepicker td.active:hover {
   background-color: #C5A059 !important;
   color: #121418 !important;
@@ -1766,7 +1785,7 @@ textarea.form-control {
   border-radius: 4px !important;
 }
 
-.daterangepicker select.monthselect, 
+.daterangepicker select.monthselect,
 .daterangepicker select.yearselect {
   background-color: #1C2027 !important;
   color: #F3F4F6 !important;
@@ -1822,6 +1841,7 @@ textarea.form-control {
     transform: translateY(-100%);
     opacity: 0;
   }
+
   to {
     transform: translateY(0);
     opacity: 1;
