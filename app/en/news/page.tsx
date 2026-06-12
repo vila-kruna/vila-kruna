@@ -3,6 +3,14 @@ import { getAllPosts } from '@/lib/markdown';
 export const metadata = {
   title: "News — Vila Kruna",
   description: "Latest news, offers and events from Vila Kruna in Belgrade.",
+  alternates: {
+    canonical: '/en/news',
+  },
+  openGraph: {
+    title: 'News — Vila Kruna',
+    description: 'Latest news, offers and events from Vila Kruna in Belgrade.',
+    url: '/en/news',
+  },
 };
 
 export default function NewsPage() {

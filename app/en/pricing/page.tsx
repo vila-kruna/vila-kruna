@@ -4,6 +4,14 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Pricing — Vila Kruna Belgrade',
   description: 'Check room prices at Vila Kruna. Standard room from 2,800 RSD, economy from 3,300 RSD, deluxe from 3,500 RSD, superior from 5,750 RSD. Best rates in Belgrade.',
+  alternates: {
+    canonical: '/en/pricing',
+  },
+  openGraph: {
+    title: 'Pricing — Vila Kruna Belgrade',
+    description: 'Check room prices at Vila Kruna. Standard room from 2,800 RSD, economy from 3,300 RSD, deluxe from 3,500 RSD, superior from 5,750 RSD.',
+    url: '/en/pricing',
+  },
 };
 
 export default function PricingPage() {

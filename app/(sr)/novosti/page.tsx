@@ -3,6 +3,14 @@ import { getAllPosts } from '@/lib/markdown';
 export const metadata = {
   title: "Novosti — Vila Kruna",
   description: "Najnovije vesti, ponude i dešavanja iz Vile Kruna u Beogradu.",
+  alternates: {
+    canonical: '/novosti',
+  },
+  openGraph: {
+    title: 'Novosti — Vila Kruna',
+    description: 'Najnovije vesti, ponude i dešavanja iz Vile Kruna u Beogradu.',
+    url: '/novosti',
+  },
 };
 
 export default function NovostiPage() {

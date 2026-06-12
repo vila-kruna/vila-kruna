@@ -6,6 +6,14 @@ import ReviewsSlider from '../components/ReviewsSlider';
 export const metadata: Metadata = {
   title: 'Vila Kruna — Accommodation in Belgrade | Booking.com rating 9.0',
   description: 'Vila Kruna accommodation in Rakovica, Belgrade. New, spacious, clean — 15 mins from center. Free parking and WiFi. Rated 9.0 on Booking.com.',
+  alternates: {
+    canonical: '/en/',
+  },
+  openGraph: {
+    title: 'Vila Kruna — Accommodation in Belgrade | Booking.com rating 9.0',
+    description: 'Vila Kruna accommodation in Rakovica, Belgrade. New, spacious, clean — 15 mins from center. Free parking and WiFi. Rated 9.0 on Booking.com.',
+    url: '/en/',
+  },
 };
 
 const enReviews = [

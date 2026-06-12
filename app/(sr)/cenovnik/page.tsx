@@ -4,6 +4,14 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Cenovnik — Vila Kruna Beograd',
   description: 'Pogledajte cene smeštaja u Vili Kruna. Standardna soba od 2.800 RSD, economy soba od 3.300 RSD, deluks od 3.500 RSD, superior od 5.750 RSD. Najpovoljnije cene u Beogradu.',
+  alternates: {
+    canonical: '/cenovnik',
+  },
+  openGraph: {
+    title: 'Cenovnik — Vila Kruna Beograd',
+    description: 'Pogledajte cene smeštaja u Vili Kruna. Standardna soba od 2.800 RSD, economy soba od 3.300 RSD, deluks od 3.500 RSD, superior od 5.750 RSD.',
+    url: '/cenovnik',
+  },
 };
 
 export default function CenovnikPage() {

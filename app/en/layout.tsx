@@ -19,10 +19,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vilakruna.rs"),
   title: "Vila Kruna — Accommodation and Motel in Belgrade | Booking.com rating 9.0",
   description: "Vila Kruna motel and accommodation in Rakovica, Belgrade. New, spacious, clean — 15 min from the center. Free parking and WiFi. Rated 9.0 on Booking.com.",
   alternates: {
-    canonical: "https://vilakruna.rs/en/",
     languages: {
       "sr": "https://vilakruna.rs/",
       "en": "https://vilakruna.rs/en/",
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vila Kruna — Accommodation and Motel in Belgrade",
     description: "Your peace in Belgrade. New, spacious, clean — 15 min from the center. Free parking and WiFi. Rated 9.0 on Booking.com.",
-    url: "https://vilakruna.rs/en/",
     images: ["https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"]
   }
 };

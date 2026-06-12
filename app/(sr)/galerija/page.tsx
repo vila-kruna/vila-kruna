@@ -5,6 +5,14 @@ import Gallery from '../../components/Gallery';
 export const metadata: Metadata = {
   title: 'Galerija slika — Vila Kruna Beograd',
   description: 'Pogledajte slike Vile Kruna u Beogradu. Slike eksterijera, moderno opremljenih soba i luksuznih kupatila.',
+  alternates: {
+    canonical: '/galerija',
+  },
+  openGraph: {
+    title: 'Galerija slika — Vila Kruna Beograd',
+    description: 'Pogledajte slike Vile Kruna u Beogradu. Slike eksterijera, moderno opremljenih soba i luksuznih kupatila.',
+    url: '/galerija',
+  },
 };
 
 export default function GalerijaPage() {

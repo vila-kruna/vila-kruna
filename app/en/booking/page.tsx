@@ -5,6 +5,14 @@ import ContactForm from '../../components/ContactForm';
 export const metadata: Metadata = {
   title: 'Booking — Vila Kruna Belgrade',
   description: 'Book your stay at Vila Kruna in Belgrade quickly and easily.',
+  alternates: {
+    canonical: '/en/booking',
+  },
+  openGraph: {
+    title: 'Booking — Vila Kruna Belgrade',
+    description: 'Book your stay at Vila Kruna in Belgrade quickly and easily.',
+    url: '/en/booking',
+  },
 };
 
 export default function BookingPage() {

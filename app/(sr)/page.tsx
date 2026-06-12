@@ -6,6 +6,14 @@ import ReviewsSlider from '../components/ReviewsSlider';
 export const metadata: Metadata = {
   title: 'Vila Kruna — Smeštaj u Beogradu | Booking.com rating 9.0',
   description: 'Vila Kruna smeštaj u Rakovici, Beograd. Novo, prostrano, čisto — 15 min od centra. Besplatan parking i WiFi. Ocena 9.0 na Booking.com.',
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'Vila Kruna — Smeštaj u Beogradu | Booking.com rating 9.0',
+    description: 'Vila Kruna smeštaj u Rakovici, Beograd. Novo, prostrano, čisto — 15 min od centra. Besplatan parking i WiFi. Ocena 9.0 na Booking.com.',
+    url: '/',
+  },
 };
 
 const srReviews = [

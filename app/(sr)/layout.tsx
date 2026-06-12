@@ -19,10 +19,10 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://vilakruna.rs"),
   title: "Vila Kruna — Smeštaj i motel u Beogradu | Booking.com rating 9.0",
   description: "Vila Kruna motel i smeštaj u Rakovici, Beograd. Novo, prostrano, čisto — 15 min od centra. Besplatan parking i WiFi. Ocena 9.0 na Booking.com.",
   alternates: {
-    canonical: "https://vilakruna.rs/",
     languages: {
       "sr": "https://vilakruna.rs/",
       "en": "https://vilakruna.rs/en/",
@@ -32,7 +32,6 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Vila Kruna — Smeštaj i motel u Beogradu",
     description: "Vaš mir u Beogradu. Novo, prostrano, čisto — 15 min od centra. Besplatan parking i WiFi. Ocena 9.0 na Booking.com.",
-    url: "https://vilakruna.rs",
     images: ["https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80"]
   }
 };

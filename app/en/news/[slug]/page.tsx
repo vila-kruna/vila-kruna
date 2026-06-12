@@ -20,12 +20,12 @@ export async function generateMetadata(props: { params: Promise<{ slug: string }
     title: `${post.title} — Vila Kruna`,
     description: post.summary || `${post.title} — latest news from Vila Kruna in Belgrade.`,
     alternates: {
-      canonical: `https://vilakruna.rs/en/news/${post.slug}`,
+      canonical: `/en/news/${post.slug}`,
     },
     openGraph: {
       title: post.title,
       description: post.summary || `${post.title} — Vila Kruna`,
-      url: `https://vilakruna.rs/en/news/${post.slug}`,
+      url: `/en/news/${post.slug}`,
       type: 'article',
       images: post.thumbnail ? [post.thumbnail] : [],
       publishedTime: post.date,

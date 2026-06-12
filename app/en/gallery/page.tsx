@@ -5,6 +5,14 @@ import Gallery from '../../components/Gallery';
 export const metadata: Metadata = {
   title: 'Photo Gallery — Vila Kruna Belgrade',
   description: 'Browse Vila Kruna photo gallery. High-resolution images of the exterior, modern rooms, and stylish bathrooms.',
+  alternates: {
+    canonical: '/en/gallery',
+  },
+  openGraph: {
+    title: 'Photo Gallery — Vila Kruna Belgrade',
+    description: 'Browse Vila Kruna photo gallery. High-resolution images of the exterior, modern rooms, and stylish bathrooms.',
+    url: '/en/gallery',
+  },
 };
 
 export default function GalleryPage() {
