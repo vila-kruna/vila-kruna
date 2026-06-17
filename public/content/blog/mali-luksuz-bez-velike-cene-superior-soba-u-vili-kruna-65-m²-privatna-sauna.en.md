@@ -48,7 +48,7 @@ This is simply a beautiful, clean, quiet room where you can turn on the sauna af
 
 One of our guests put it best:
 
-> _„(mesto za pravi citat iz Booking utiska — idealno onaj koji pominje saunu, đakuzi ili „vrednost za pare". Pravi citat je jači od bilo čega što ja napišem.)"_
+> _„_Vila Kruna is a premium property with fantastic in-room amenities. The rooms are exceptionally spacious, and some even feature a sauna and a jacuzzi. The cleanliness of the property and the friendliness of the staff make a stay at Vila Kruna feel as though you are the only guest. We highly recommend it, and it is always worth returning. The location is ideal for anyone passing through, as it is very close to the highway and the Belgrade bypass. We are very satisfied and are regular guests._"_
 
 #### 
 

@@ -48,7 +48,7 @@ Ovo je jednostavno lepa, čista, tiha soba u kojoj možeš da upališ saunu posl
 
 Gost koji je odseo kod nas to najbolje kaže:
 
-> _„(mesto za pravi citat iz Booking utiska — idealno onaj koji pominje saunu, đakuzi ili „vrednost za pare". Pravi citat je jači od bilo čega što ja napišem.)"_
+> _„_Vila Kruna je vrhunski objekat sa fantastičnim sadržajima u sobama. Sobe su izuzetno prostrane, a neke čak imaju i saunu i đakuzi. Čistoća objekta i ljubaznost osoblja čine da se boravak u Vili Kruna oseća kao da ste jedini gost. Toplo preporučujemo i uvek se vredi vratiti. Lokacija je idealna za svakoga ko prolazi, jer je veoma blizu autoputa i beogradske obilaznice. Veoma smo zadovoljni i redovni gosti._"_
 
 #### Za koga je ova soba
 
