@@ -5,7 +5,7 @@ image: ''
 summary: A room with a sauna and a jacuzzi in the center of Belgrade will usually run you over €100—and on top of that, you get crowds, parking headaches, and noise until two in the morning. At Vila Kruna, you get the exact same room, but it's quieter, half the price, comes with free parking right outside your door, and the E75 highway is just five minutes away.
 ---
 
-There’s an old misconception: that a teautiful toom has to be expensive\*\*.\*\* People think that if you want a sauna and a jacuzzi, you have to book a five-star hotel downtown and pay an arm and a leg just to get a few hours of peace.
+**There’s an old misconception: that a teautiful toom has to be expensive**. People think that if you want a sauna and a jacuzzi, you have to book a five-star hotel downtown and pay an arm and a leg just to get a few hours of peace.
 
 We disagree. And here is why—backed by real numbers, not empty marketing talk.
 
