@@ -50,7 +50,8 @@ Gost koji je odseo kod nas to najbolje kaže:
 
 > _„Vila Kruna je vrhunski objekat sa fantastičnim sadržajima u sobama. Sobe su izuzetno prostrane, a neke čak imaju i saunu i đakuzi. Čistoća objekta i ljubaznost osoblja čine da se boravak u Vili Kruna oseća kao da ste jedini gost. Toplo preporučujemo i uvek se vredi vratiti. Lokacija je idealna za svakoga ko prolazi, jer je veoma blizu autoputa i beogradske obilaznice. Veoma smo zadovoljni i redovni gosti._"
 
-#### Za koga je ova soba
+#### 
+Za koga je ova soba
 
 - **Za par** kome treba bekstvo na jednu noć, a ne želi da rasipa pola budžeta na sobu.
 - **Za poslovnog gosta** koji posle sastanaka hoće da se opusti, a ne da traži parking po centru.

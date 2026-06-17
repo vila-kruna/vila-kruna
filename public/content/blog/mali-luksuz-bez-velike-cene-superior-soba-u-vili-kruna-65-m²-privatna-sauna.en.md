@@ -52,10 +52,10 @@ One of our guests put it best:
 
 #### 
 
-Who Is This Room For?
+#### **Who Is This Room For?**
 
 - **For couples** who need a one-night getaway but don't want to blow half their monthly budget on a room.
-- **For business travelers** who want to unwind after meetings instead of circling the city center looking for parking.**Za poslovnog gosta** koji posle sastanaka hoće da se opusti, a ne da traži parking po centru.
+- **For business travelers** who want to unwind after meetings instead of circling the city center looking for parking.
 - **For anyone** who appreciates a beautiful space but refuses to pay double just for a downtown address.
 
 #### Peace, Parking, and a Sauna — All in One Place
