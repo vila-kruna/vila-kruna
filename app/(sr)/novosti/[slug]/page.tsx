@@ -72,8 +72,7 @@ export default async function PostPage(props: { params: Promise<{ slug: string }
       <section className="section" style={{ padding: '60px 0' }}>
         <div className="container" style={{ maxWidth: '800px', margin: '0 auto' }}>
           <div
-            className="prose prose-lg"
-            style={{ color: 'var(--text-secondary)', lineHeight: '1.8' }}
+            className="blog-post-body"
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
           <div style={{ marginTop: '40px', paddingTop: '20px', borderTop: '1px solid #eee', textAlign: 'center' }}>

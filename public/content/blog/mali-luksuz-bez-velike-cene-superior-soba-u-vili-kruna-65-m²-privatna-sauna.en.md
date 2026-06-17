@@ -34,6 +34,7 @@ No need to guess—here is exactly what comes with the Superior Room::
 Instead of just saying it costs "double," here are the actual numbers:
 
 | Location | Room with Sauna/Jacuzzi | Parking | Peace / Noise | Distance to Highway |
+| --- | --- | --- | --- | --- |
 | **Vila Kruna** | **od 49 €** | Free, right outside | Quiet | 5 min from E75 |
 | Lumiere Hotel | from 150 € | No | City noise | 20-30+ min |
 | Downtown Apartment | from 180 € | Yes | Unpredictable | 15-20 min |
