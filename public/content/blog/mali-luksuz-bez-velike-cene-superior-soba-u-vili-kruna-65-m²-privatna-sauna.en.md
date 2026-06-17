@@ -35,8 +35,8 @@ Instead of just saying it costs "double," here are the actual numbers:
 
 | Location | Room with Sauna/Jacuzzi | Parking | Peace / Noise | Distance to Highway |
 | **Vila Kruna** | **od 49 €** | Free, right outside | Quiet | 5 min from E75 |
-| Downtown Hotel | *(\~X €)* | *(plaća se / nema)* | City noise | *(X min)* |
-| Downtown Apartment | *(\~X €)* | Street parking (metered) | Unpredictable | *(X min)* |
+| Lumiere Hotel | from 150 € | No | City noise | 20-30+ min |
+| Downtown Apartment | from 180 € | Yes | Unpredictable | 15-20 min |
 
 The exact same perks—sauna, jacuzzi, beautiful room—for half the money and zero parking stress.
 

@@ -35,8 +35,8 @@ Da ne ostane na „duplo", evo brojki _(zameni stvarnim cenama sa Booking-a za u
 
 | Gde | Soba sa saunom/đakuzijem | Parking | Mir / buka | Do auto-puta |
 | **Vila Kruna** | **od 49 €** | Besplatan, ispred vrata | Tiho | 5 min do E75 |
-| Lumiere Hotel | 150 € | Nema | Gradska buka | 20-30+ min |
-| Apartman u centru *(primer B)* | *(\~X €)* | *(ulična, naplata)* | Nepredvidivo | *(X min)* |
+| Lumiere Hotel | od 150 € | Nema | Gradska buka | 20-30+ min |
+| Prezident Palace | od 180 € | Ima | Nepredvidivo | 15-20 min |
 
 Ista stvar — sauna, đakuzi, lepa soba — za **upola para** i bez nerviranja oko parkinga.
 
