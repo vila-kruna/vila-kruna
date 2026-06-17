@@ -34,9 +34,9 @@ Da ne nagađaš — evo šta tačno ide uz Superior sobu:
 Da ne ostane na „duplo", evo brojki _(zameni stvarnim cenama sa Booking-a za uporedive sobe)_:
 
 | Gde | Soba sa saunom/đakuzijem | Parking | Mir / buka | Do auto-puta |
-| **Vila Kruna** | **od 49 €** | besplatan, ispred vrata | tiho | 5 min do E75 |
-| Hotel u centru *(primer A)* | *(\~X €)* | *(plaća se / nema)* | gradska buka | *(X min)* |
-| Apartman u centru *(primer B)* | *(\~X €)* | *(ulična, naplata)* | promenljivo | *(X min)* |
+| **Vila Kruna** | **od 49 €** | Besplatan, ispred vrata | Tiho | 5 min do E75 |
+| Lumiere Hotel | 150 € | Nema | Gradska buka | 20-30+ min |
+| Apartman u centru *(primer B)* | *(\~X €)* | *(ulična, naplata)* | Nepredvidivo | *(X min)* |
 
 Ista stvar — sauna, đakuzi, lepa soba — za **upola para** i bez nerviranja oko parkinga.
 
@@ -51,6 +51,7 @@ Gost koji je odseo kod nas to najbolje kaže:
 > _„Vila Kruna je vrhunski objekat sa fantastičnim sadržajima u sobama. Sobe su izuzetno prostrane, a neke čak imaju i saunu i đakuzi. Čistoća objekta i ljubaznost osoblja čine da se boravak u Vili Kruna oseća kao da ste jedini gost. Toplo preporučujemo i uvek se vredi vratiti. Lokacija je idealna za svakoga ko prolazi, jer je veoma blizu autoputa i beogradske obilaznice. Veoma smo zadovoljni i redovni gosti._"
 
 #### 
+
 Za koga je ova soba
 
 - **Za par** kome treba bekstvo na jednu noć, a ne želi da rasipa pola budžeta na sobu.
