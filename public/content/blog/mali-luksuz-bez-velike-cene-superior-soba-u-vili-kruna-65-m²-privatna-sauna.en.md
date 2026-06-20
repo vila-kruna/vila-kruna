@@ -39,8 +39,6 @@ Instead of just saying it costs "double," here are the actual numbers:
 | Lumiere Hotel | from 150 € | No | City noise | 20-30+ min |
 | Downtown Apartment | from 180 € | Yes | Unpredictable | 15-20 min |
 
-The exact same perks—sauna, jacuzzi, beautiful room—for half the money and zero parking stress.
-
 #### Zero Snobbery — Just Pure Value
 
 We aren’t going to try and convince you that this is an "exclusive experience for refined guests." We hate those buzzwords just as much as you do.
