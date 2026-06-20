@@ -98,7 +98,7 @@ export default function AdminPage() {
           style={{
             position: 'fixed',
             bottom: '16px',
-            left: '16px',
+            left: '200px',
             zIndex: 99999,
             padding: '6px 14px',
             background: 'rgba(220, 53, 69, 0.9)',
