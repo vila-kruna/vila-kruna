@@ -38,8 +38,15 @@ export async function POST(request: NextRequest) {
   const expectedPasswordHash = process.env.ADMIN_PASSWORD_HASH;
   const githubPat = process.env.GITHUB_PAT;
 
+  console.log('[Auth API] Received login request');
+  console.log('[Auth API] Env configuration status:', {
+    ADMIN_USERNAME: expectedUsername ? `Set (len: ${expectedUsername.length})` : 'MISSING',
+    ADMIN_PASSWORD_HASH: expectedPasswordHash ? `Set (len: ${expectedPasswordHash.length})` : 'MISSING',
+    GITHUB_PAT: githubPat ? `Set (len: ${githubPat.length})` : 'MISSING',
+  });
+
   if (!expectedUsername || !expectedPasswordHash || !githubPat) {
-    // TODO(security): In production, consider alerting on missing env vars
+    console.error('[Auth API] Crucial environment variables are missing. Returning 500.');
     return Response.json(
       { error: 'Server configuration error.' },
       { status: 500 }
@@ -50,7 +57,8 @@ export async function POST(request: NextRequest) {
   let body: { username?: string; password?: string };
   try {
     body = await request.json();
-  } catch {
+  } catch (err: any) {
+    console.error('[Auth API] Failed to parse request JSON:', err?.message || err);
     return Response.json(
       { error: 'Invalid request body.' },
       { status: 400 }
@@ -59,10 +67,17 @@ export async function POST(request: NextRequest) {
 
   const { username, password } = body;
 
+  console.log('[Auth API] Parsing credentials:', {
+    username: username ? `${username.slice(0, 3)}...` : 'undefined/null',
+    usernameLength: username?.length || 0,
+    passwordLength: password?.length || 0,
+  });
+
   if (
     typeof username !== 'string' || username.length === 0 || username.length > 128 ||
     typeof password !== 'string' || password.length === 0 || password.length > 128
   ) {
+    console.warn('[Auth API] Credentials failed format validation rules.');
     return Response.json(
       { error: 'Invalid credentials format.' },
       { status: 400 }
@@ -73,16 +88,25 @@ export async function POST(request: NextRequest) {
   // For the single-user case, we compare username directly but always run bcrypt
   // to maintain constant response time regardless of which field fails
   const usernameMatch = username === expectedUsername;
-  const passwordMatch = await bcrypt.compare(password, expectedPasswordHash);
+  console.log('[Auth API] Username verification result:', usernameMatch);
+
+  let passwordMatch = false;
+  try {
+    passwordMatch = await bcrypt.compare(password, expectedPasswordHash);
+    console.log('[Auth API] Password bcrypt verification result:', passwordMatch);
+  } catch (err: any) {
+    console.error('[Auth API] Bcrypt comparison threw an error:', err?.message || err);
+  }
 
   if (!usernameMatch || !passwordMatch) {
-    // Generic error — don't reveal which field was wrong
+    console.warn('[Auth API] Access denied: Invalid username or password.');
     return Response.json(
       { error: 'Invalid username or password.' },
       { status: 401 }
     );
   }
 
+  console.log('[Auth API] Authentication successful. Injecting token.');
   // Authentication successful — return the PAT
   // The PAT is only sent over HTTPS (enforced by Vercel) and only after
   // successful server-side credential validation
