@@ -39,8 +39,6 @@ Instead of just saying it costs "double," here are the actual numbers:
 | Lumiere Hotel | from 150 € | No | City noise | 20-30+ min |
 | Downtown Apartment | from 180 € | Yes | Unpredictable | 15-20 min |
 
-#### Zero Snobbery — Just Pure Value
-
 We aren’t going to try and convince you that this is an "exclusive experience for refined guests." We hate those buzzwords just as much as you do.
 
 This is simply a beautiful, clean, quiet room where you can turn on the sauna after a long day on the road, soak in the jacuzzi, and completely forget you were even in a car. No pomp. No charging extra for "luxury" that is actually just marketing.
