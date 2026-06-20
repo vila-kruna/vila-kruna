@@ -11,6 +11,8 @@ Mi se s tim ne slažemo. I evo zašto — sa brojevima, ne praznim pričama.
 
 #### Šta zapravo dobiješ za 49 €
 
+| Test1, Test2, Test3, Test4 |\n| --- |\n| T,E,S,T |
+
 Naša Superior soba ima **65 m²**, francuski ležaj, **sopstvenu privatnu saunu i đakuzi**, mini-bar i mir kakav u centru grada prosto ne postoji. Cena? **Od 49 € po noći.**
 
 Da stavimo to u kontekst. Soba sa saunom i đakuzijem u centru Beograda košta te po pravilu **duplo** — a uz to dobiješ gužvu, problem s parkingom i buku do dva ujutru. Kod nas dobiješ isto to, ali tiše, sa besplatnim parkingom ispred vrata i auto-putem E75 na pet minuta.
