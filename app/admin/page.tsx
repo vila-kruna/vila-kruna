@@ -97,8 +97,8 @@ export default function AdminPage() {
           id="admin-logout-btn"
           style={{
             position: 'fixed',
-            top: '12px',
-            right: '12px',
+            bottom: '16px',
+            left: '16px',
             zIndex: 99999,
             padding: '6px 14px',
             background: 'rgba(220, 53, 69, 0.9)',
