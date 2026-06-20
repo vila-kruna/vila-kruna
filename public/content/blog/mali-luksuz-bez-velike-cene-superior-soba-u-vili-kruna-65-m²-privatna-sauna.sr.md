@@ -11,9 +11,9 @@ Mi se s tim ne slažemo. I evo zašto — sa brojevima, ne praznim pričama.
 
 #### Šta zapravo dobiješ za 49 €
 
-| Test | Test1 | Test2 | Test3 |
-| --- | --- | --- | --- |
-| T | E | S | T |
+Naša Superior soba ima **65 m²**, francuski ležaj, **sopstvenu privatnu saunu i đakuzi**, mini-bar i mir kakav u centru grada prosto ne postoji. Cena? **Od 49 € po noći.**
+
+Da stavimo to u kontekst. Soba sa saunom i đakuzijem u centru Beograda košta te po pravilu **duplo** — a uz to dobiješ gužvu, problem s parkingom i buku do dva ujutru. Kod nas dobiješ isto to, ali tiše, sa besplatnim parkingom ispred vrata i auto-putem E75 na pet minuta.
 
 To nije „jeftino". To je **fer**.
 
@@ -38,10 +38,6 @@ Da ne ostane na „duplo", evo brojki _(zameni stvarnim cenama sa Booking-a za u
 | **Vila Kruna** | **od 49 €** | Besplatan, ispred vrata | Tiho | 5 min do E75 |
 | Lumiere Hotel | od 150 € | Nema | Gradska buka | 20-30+ min |
 | Prezident Palace | od 180 € | Ima | Nepredvidivo | 15-20 min |
-
-Ovo je jednostavno lepa, čista, tiha soba u kojoj možeš da upališ saunu posle dugog dana na putu, potopiš se u đakuzi i zaboraviš da si uopšte bio u kolima. Bez pompe. Bez naplate „luksuza" koji je u stvari samo marketing.
-
-Gost koji je odseo kod nas to najbolje kaže:
 
 > _„Vila Kruna je vrhunski objekat sa fantastičnim sadržajima u sobama. Sobe su izuzetno prostrane, a neke čak imaju i saunu i đakuzi. Čistoća objekta i ljubaznost osoblja čine da se boravak u Vili Kruna oseća kao da ste jedini gost. Toplo preporučujemo i uvek se vredi vratiti. Lokacija je idealna za svakoga ko prolazi, jer je veoma blizu autoputa i beogradske obilaznice. Veoma smo zadovoljni i redovni gosti._"
 
