@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
     return [
       {
         source: '/metrics/:path*',
-        destination: `https://${process.env.NEXT_PUBLIC_GTM_FPS_ID || 'PASTE_YOUR_GOOGLE_ASSIGNED_ID_HERE'}.fps.goog/:path*`,
+        destination: `https://${process.env.NEXT_PUBLIC_GTM_FPS_ID || 'PASTE_YOUR_GOOGLE_ASSIGNED_ID_HERE'}.fps.goog/metrics/:path*`,
       },
     ];
   },
