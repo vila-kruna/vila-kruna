@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { sendGAEvent } from '@next/third-parties/google';
 
 interface FooterLink {
   href: string;
@@ -79,6 +80,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                 rel="noopener noreferrer"
                 className="social-icon"
                 aria-label="Instagram"
+                onClick={() => sendGAEvent({ event: 'social_click', platform: 'instagram' })}
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
@@ -88,6 +90,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                 rel="noopener noreferrer"
                 className="social-icon"
                 aria-label="Booking"
+                onClick={() => sendGAEvent({ event: 'social_click', platform: 'booking' })}
               >
                 <i className="fa-solid fa-b"></i>
               </a>
@@ -124,22 +127,45 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
             <h4>{data.contactTitle}</h4>
             <ul className="footer-contact-list">
               <li className="footer-contact-item">
-                <span className="footer-contact-icon">
-                  <i className="fa-solid fa-location-dot"></i>
-                </span>
-                <span>Svetozara Ivačkovića 4, Rakovica, Beograd</span>
+                <a 
+                  href="https://www.google.com/maps/search/Svetozara+Ivačkovića+4,+Rakovica,+Beograd"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="footer-contact-link"
+                  style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}
+                  onClick={() => sendGAEvent({ event: 'contact_click', method: 'address' })}
+                >
+                  <span className="footer-contact-icon">
+                    <i className="fa-solid fa-location-dot"></i>
+                  </span>
+                  <span>Svetozara Ivačkovića 4, Rakovica, Beograd</span>
+                </a>
               </li>
               <li className="footer-contact-item">
-                <span className="footer-contact-icon">
-                  <i className="fa-solid fa-phone"></i>
-                </span>
-                <span>+381643339555</span>
+                <a 
+                  href="tel:+381643339555"
+                  className="footer-contact-link"
+                  style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}
+                  onClick={() => sendGAEvent({ event: 'contact_click', method: 'phone' })}
+                >
+                  <span className="footer-contact-icon">
+                    <i className="fa-solid fa-phone"></i>
+                  </span>
+                  <span>+381643339555</span>
+                </a>
               </li>
               <li className="footer-contact-item">
-                <span className="footer-contact-icon">
-                  <i className="fa-solid fa-envelope"></i>
-                </span>
-                <span>info@vilakruna.rs</span>
+                <a 
+                  href="mailto:info@vilakruna.rs"
+                  className="footer-contact-link"
+                  style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}
+                  onClick={() => sendGAEvent({ event: 'contact_click', method: 'email' })}
+                >
+                  <span className="footer-contact-icon">
+                    <i className="fa-solid fa-envelope"></i>
+                  </span>
+                  <span>info@vilakruna.rs</span>
+                </a>
               </li>
             </ul>
           </div>

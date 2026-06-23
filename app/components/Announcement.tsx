@@ -1,6 +1,6 @@
 'use client';
-
 import { useState, useEffect } from 'react';
+import { sendGAEvent } from '@next/third-parties/google';
 
 interface AnnouncementData {
   enabled: boolean;
@@ -52,7 +52,11 @@ export default function Announcement({ lang }: { lang: 'sr' | 'en' }) {
             {title && <h3>{title}</h3>}
             {body && <p>{body}</p>}
             {data.link && (
-              <a href={data.link} className="btn btn-primary announcement-cta">
+              <a 
+                href={data.link} 
+                className="btn btn-primary announcement-cta"
+                onClick={() => sendGAEvent({ event: 'select_promotion', promotion_name: 'announcement' })}
+              >
                 {linkText}
               </a>
             )}

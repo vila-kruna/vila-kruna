@@ -1,6 +1,6 @@
 'use client';
-
 import { useState, useEffect } from 'react';
+import { sendGAEvent } from '@next/third-parties/google';
 
 interface PromoData {
   enabled: boolean;
@@ -38,7 +38,12 @@ export default function PromoBanner({ lang }: { lang: 'sr' | 'en' }) {
     <div className="promo-banner" style={{ backgroundColor: bgColor, color: textColor }}>
       <div className="container promo-banner-inner">
         {promo.link ? (
-          <a href={promo.link} className="promo-banner-link" style={{ color: textColor }}>
+          <a 
+            href={promo.link} 
+            className="promo-banner-link" 
+            style={{ color: textColor }}
+            onClick={() => sendGAEvent({ event: 'select_promotion', promotion_name: 'promo_banner' })}
+          >
             {text}
           </a>
         ) : (
