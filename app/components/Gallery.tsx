@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { sendGAEvent } from '@next/third-parties/google';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 interface GalleryImage {
   name: string;
@@ -93,14 +93,14 @@ export default function Gallery({ lang }: { lang: 'sr' | 'en' }) {
             className="gallery-item show"
             onClick={() => {
               setLightboxIndex(idx);
-              sendGAEvent({ event: 'engagement', action: 'view_lightbox' });
+              sendGTMEvent({ event: 'engagement', action: 'view_lightbox' });
             }}
             role="button"
             tabIndex={0}
             onKeyDown={(e) => {
               if (e.key === 'Enter') {
                 setLightboxIndex(idx);
-                sendGAEvent({ event: 'engagement', action: 'view_lightbox' });
+                sendGTMEvent({ event: 'engagement', action: 'view_lightbox' });
               }
             }}
           >

@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { sendGAEvent } from '@next/third-parties/google';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 export default function ContactForm({ lang }: { lang: 'sr' | 'en' }) {
   const [isSubmitted, setIsSubmitted] = useState(false);
@@ -13,7 +13,7 @@ export default function ContactForm({ lang }: { lang: 'sr' | 'en' }) {
     const nameInput = form.elements.namedItem('form-name') as HTMLInputElement;
     setSubmittedName(nameInput?.value || '');
     setIsSubmitted(true);
-    sendGAEvent({ event: 'generate_lead', form_name: 'contact_form' });
+    sendGTMEvent({ event: 'generate_lead', form_name: 'contact_form' });
   };
 
   const handleReset = () => {

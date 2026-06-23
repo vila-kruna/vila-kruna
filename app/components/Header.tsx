@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { sendGAEvent } from '@next/third-parties/google';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 interface NavItem {
   href: string;
@@ -81,7 +81,7 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
                     id={item.id} 
                     onClick={() => {
                       closeMenu();
-                      sendGAEvent({ event: 'nav_click', destination: item.id });
+                      sendGTMEvent({ event: 'nav_click', destination: item.id });
                     }}
                   >
                     {item.label}
@@ -98,7 +98,7 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
                     id={item.id} 
                     onClick={() => {
                       closeMenu();
-                      sendGAEvent({ event: 'nav_click', destination: item.id });
+                      sendGTMEvent({ event: 'nav_click', destination: item.id });
                     }}
                   >
                     {item.label}
@@ -115,7 +115,7 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
               href="/"
               className={`lang-btn${lang === 'sr' ? ' active' : ''}`}
               id="lang-btn-sr"
-              onClick={() => sendGAEvent({ event: 'lang_switch', language: 'sr' })}
+              onClick={() => sendGTMEvent({ event: 'lang_switch', language: 'sr' })}
             >
               SR
             </Link>
@@ -123,7 +123,7 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
               href="/en"
               className={`lang-btn${lang === 'en' ? ' active' : ''}`}
               id="lang-btn-en"
-              onClick={() => sendGAEvent({ event: 'lang_switch', language: 'en' })}
+              onClick={() => sendGTMEvent({ event: 'lang_switch', language: 'en' })}
             >
               EN
             </Link>

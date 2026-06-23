@@ -1,7 +1,7 @@
 'use client';
 
 import Link from 'next/link';
-import { sendGAEvent } from '@next/third-parties/google';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 interface FooterLink {
   href: string;
@@ -82,7 +82,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                 rel="noopener noreferrer"
                 className="social-icon"
                 aria-label="Instagram"
-                onClick={() => sendGAEvent({ event: 'social_click', platform: 'instagram' })}
+                onClick={() => sendGTMEvent({ event: 'social_click', platform: 'instagram' })}
               >
                 <i className="fa-brands fa-instagram"></i>
               </a>
@@ -92,7 +92,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                 rel="noopener noreferrer"
                 className="social-icon"
                 aria-label="Booking"
-                onClick={() => sendGAEvent({ event: 'social_click', platform: 'booking' })}
+                onClick={() => sendGTMEvent({ event: 'social_click', platform: 'booking' })}
               >
                 <i className="fa-solid fa-b"></i>
               </a>
@@ -135,7 +135,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                   rel="noopener noreferrer"
                   className="footer-contact-link"
                   style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}
-                  onClick={() => sendGAEvent({ event: 'contact_click', method: 'address' })}
+                  onClick={() => sendGTMEvent({ event: 'contact_click', method: 'address' })}
                 >
                   <span className="footer-contact-icon">
                     <i className="fa-solid fa-location-dot"></i>
@@ -148,7 +148,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                   href="tel:+381643339555"
                   className="footer-contact-link"
                   style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}
-                  onClick={() => sendGAEvent({ event: 'contact_click', method: 'phone' })}
+                  onClick={() => sendGTMEvent({ event: 'contact_click', method: 'phone' })}
                 >
                   <span className="footer-contact-icon">
                     <i className="fa-solid fa-phone"></i>
@@ -161,7 +161,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                   href="mailto:info@vilakruna.rs"
                   className="footer-contact-link"
                   style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}
-                  onClick={() => sendGAEvent({ event: 'contact_click', method: 'email' })}
+                  onClick={() => sendGTMEvent({ event: 'contact_click', method: 'email' })}
                 >
                   <span className="footer-contact-icon">
                     <i className="fa-solid fa-envelope"></i>

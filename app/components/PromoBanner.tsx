@@ -1,6 +1,6 @@
 'use client';
 import { useState, useEffect } from 'react';
-import { sendGAEvent } from '@next/third-parties/google';
+import { sendGTMEvent } from '@next/third-parties/google';
 
 interface PromoData {
   enabled: boolean;
@@ -42,7 +42,7 @@ export default function PromoBanner({ lang }: { lang: 'sr' | 'en' }) {
             href={promo.link} 
             className="promo-banner-link" 
             style={{ color: textColor }}
-            onClick={() => sendGAEvent({ event: 'select_promotion', promotion_name: 'promo_banner' })}
+            onClick={() => sendGTMEvent({ event: 'select_promotion', promotion_name: 'promo_banner' })}
           >
             {text}
           </a>

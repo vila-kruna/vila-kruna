@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef } from 'react';
-import { sendGAEvent } from '@next/third-parties/google';
+import { sendGTMEvent } from '@next/third-parties/google';
 interface Review {
   name: string;
   text: string;
@@ -45,7 +45,7 @@ export default function ReviewsSlider({ reviews }: { reviews: Review[] }) {
             rel="noopener noreferrer"
             className="review-card"
             style={{ textDecoration: 'none', color: 'inherit', display: 'flex', flexDirection: 'column' }}
-            onClick={() => sendGAEvent({ event: 'engagement', action: 'click_review' })}
+            onClick={() => sendGTMEvent({ event: 'engagement', action: 'click_review' })}
           >
             <div className="stars">
               <i className="fa-solid fa-star"></i>
