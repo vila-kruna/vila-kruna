@@ -1,3 +1,5 @@
+'use client';
+
 import Link from 'next/link';
 import { sendGAEvent } from '@next/third-parties/google';
 
