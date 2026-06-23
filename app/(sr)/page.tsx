@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
 import Announcement from '../components/Announcement';
 import ReviewsSlider from '../components/ReviewsSlider';
 
@@ -52,6 +53,69 @@ const srReviews = [
 export default function Home() {
   return (
     <>
+      <Script
+        id="json-ld-motel"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Motel',
+            name: 'Vila Kruna',
+            image: 'https://utfs.io/f/7BAyoiVHGCJelvHRDeY43o2rhvXi6WazDQ9IB51uFONndpYx',
+            '@id': 'https://vilakruna.rs/#motel',
+            url: 'https://vilakruna.rs',
+            telephone: '+381643339555',
+            email: 'info@vilakruna.rs',
+            priceRange: '$$',
+            address: {
+              '@type': 'PostalAddress',
+              streetAddress: 'Svetozara Ivačkovića 4, Rakovica',
+              addressLocality: 'Beograd',
+              postalCode: '11090',
+              addressCountry: 'RS',
+            },
+            geo: {
+              '@type': 'GeoCoordinates',
+              latitude: 44.7167009,
+              longitude: 20.4251005,
+            },
+            starRating: {
+              '@type': 'Rating',
+              ratingValue: '3',
+            },
+            aggregateRating: {
+              '@type': 'AggregateRating',
+              ratingValue: '9.0',
+              reviewCount: '326',
+              bestRating: '10',
+              worstRating: '1',
+              ratingExplanation: 'Booking.com score',
+            },
+            amenityFeature: [
+              {
+                '@type': 'LocationFeatureSpecification',
+                name: 'Besplatan Wi-Fi',
+                value: true,
+              },
+              {
+                '@type': 'LocationFeatureSpecification',
+                name: 'Besplatan privatni parking',
+                value: true,
+              },
+              {
+                '@type': 'LocationFeatureSpecification',
+                name: 'Sauna',
+                value: true,
+              },
+              {
+                '@type': 'LocationFeatureSpecification',
+                name: 'Đakuzi',
+                value: true,
+              },
+            ],
+          }),
+        }}
+      />
       {/* Hero Section */}
       <section className="hero" id="hero-section"
         style={{ backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://utfs.io/f/7BAyoiVHGCJelvHRDeY43o2rhvXi6WazDQ9IB51uFONndpYx')" }}>
