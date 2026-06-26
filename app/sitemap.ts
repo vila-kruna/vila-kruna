@@ -8,33 +8,63 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const postsSr = getAllPosts('sr');
   const postsEn = getAllPosts('en');
 
-  const staticPages: MetadataRoute.Sitemap = [
-    { url: baseUrl, changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${baseUrl}/smestaj`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/cenovnik`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/galerija`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/novosti`, changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${baseUrl}/rezervacija`, changeFrequency: 'yearly', priority: 0.5 },
-    // New Serbian SEO pages
-    { url: `${baseUrl}/kako-do-nas-sa-autoputa`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/superior-soba`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/tih-miran-kutak-sa-parkingom`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/dnevni-smestaj`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/grupe-i-porodice`, changeFrequency: 'monthly', priority: 0.7 },
-    // English
-    { url: `${baseUrl}/en`, changeFrequency: 'weekly', priority: 1.0 },
-    { url: `${baseUrl}/en/accommodation`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/en/pricing`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/en/gallery`, changeFrequency: 'monthly', priority: 0.6 },
-    { url: `${baseUrl}/en/news`, changeFrequency: 'weekly', priority: 0.7 },
-    { url: `${baseUrl}/en/booking`, changeFrequency: 'yearly', priority: 0.5 },
-    // New English SEO pages
-    { url: `${baseUrl}/en/how-to-reach-us-from-highway`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/en/superior-room`, changeFrequency: 'monthly', priority: 0.8 },
-    { url: `${baseUrl}/en/quiet-peaceful-corner-with-parking`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/en/day-use-accommodation`, changeFrequency: 'monthly', priority: 0.7 },
-    { url: `${baseUrl}/en/groups-and-families`, changeFrequency: 'monthly', priority: 0.7 },
+  const currentDate = new Date();
+
+  // Helper to construct sitemap entries with alternates
+  const createLocalizedEntry = (
+    srPath: string,
+    enPath: string,
+    changeFrequency: 'weekly' | 'monthly' | 'yearly',
+    priority: number
+  ): MetadataRoute.Sitemap => {
+    const srUrl = srPath ? `${baseUrl}/${srPath}` : baseUrl;
+    const enUrl = `${baseUrl}/en${enPath ? `/${enPath}` : ''}`;
+    const alternates = {
+      languages: {
+        sr: srUrl,
+        en: enUrl,
+      },
+    };
+
+    return [
+      {
+        url: srUrl,
+        lastModified: currentDate,
+        changeFrequency,
+        priority,
+        alternates,
+      },
+      {
+        url: enUrl,
+        lastModified: currentDate,
+        changeFrequency,
+        priority,
+        alternates,
+      },
+    ];
+  };
+
+  // Generate localized static pages
+  const staticPairs = [
+    // Home page
+    { sr: '', en: '', freq: 'weekly' as const, priority: 1.0 },
+    // Main pages
+    { sr: 'smestaj', en: 'accommodation', freq: 'monthly' as const, priority: 0.8 },
+    { sr: 'cenovnik', en: 'pricing', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'galerija', en: 'gallery', freq: 'monthly' as const, priority: 0.6 },
+    { sr: 'novosti', en: 'news', freq: 'weekly' as const, priority: 0.7 },
+    { sr: 'rezervacija', en: 'booking', freq: 'yearly' as const, priority: 0.5 },
+    // SEO Pages
+    { sr: 'kako-do-nas-sa-autoputa', en: 'how-to-reach-us-from-highway', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'superior-soba', en: 'superior-room', freq: 'monthly' as const, priority: 0.8 },
+    { sr: 'tih-miran-kutak-sa-parkingom', en: 'quiet-peaceful-corner-with-parking', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'dnevni-smestaj', en: 'day-use-accommodation', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'grupe-i-porodice', en: 'groups-and-families', freq: 'monthly' as const, priority: 0.7 },
   ];
+
+  const staticPages: MetadataRoute.Sitemap = staticPairs.flatMap(pair =>
+    createLocalizedEntry(pair.sr, pair.en, pair.freq, pair.priority)
+  );
 
   const blogPagesSr: MetadataRoute.Sitemap = postsSr.map(post => ({
     url: `${baseUrl}/novosti/${post.slug}`,
