@@ -19,7 +19,7 @@ export default function HowToReachUsPage() {
     <>
       <section className="page-header" id="highway-guide-header">
         <div className="container">
-          <h1>How to Reach Us from the Highway</h1>
+          <h1>How to Reach Vila Kruna Belgrade from the Highway</h1>
           <p>A quick and simple guide to easily reach Vila Kruna from major highway routes.</p>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function HowToReachUsPage() {
               </p>
               <ol style={{ paddingLeft: '20px', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li>Take the exit at the <strong>Orlovača</strong> interchange toward Ibarska Magistrala (direction Rakovica/Center).</li>
-                <li>Continue straight onto Patrijarha Dimitrija Street.</li>
+                <li>Continue straight along the highway and take the exit to the bypass road toward Resnik.</li>
                 <li>Turn right onto Svetozara Ivačkovića Street, where Vila Kruna is located.</li>
               </ol>
             </div>
@@ -69,8 +69,8 @@ export default function HowToReachUsPage() {
               </p>
               <ol style={{ paddingLeft: '20px', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li>Drive along Bulevar Vojvode Mišića past the Belgrade Fair, then cross the Topčider River and pass next to Topčider Park.</li>
-                <li>Continue straight on Bulevar Patrijarha Pavla and Patrijarha Dimitrija directly toward Rakovica.</li>
-                <li>The route is direct, fast, and does not require complex turns.</li>
+                <li>Continue straight on Bulevar Patrijarha Pavla and Patrijarha Dimitrija directly toward the BIG Rakovica shopping center.</li>
+                <li>From there, the route is direct, fast, and simple, continuing along Oslobodilaca Rakovice Street.</li>
               </ol>
             </div>
           </div>

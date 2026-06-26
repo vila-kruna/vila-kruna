@@ -19,7 +19,7 @@ export default function PricingPage() {
     <>
       <section className="page-header" id="pricing-header">
         <div className="container">
-          <h1>Our Room Prices</h1>
+          <h1>Pricing — Accommodation in Belgrade — Vila Kruna</h1>
           <p>Check the rates for all our rooms.</p>
         </div>
       </section>

@@ -19,7 +19,7 @@ export default function CenovnikPage() {
     <>
       <section className="page-header" id="pricing-header">
         <div className="container">
-          <h1>Cenovnik Usluga</h1>
+          <h1>Cenovnik smeštaja u Beogradu — Vila Kruna</h1>
           <p>Proverite cene za sve naše sobe.</p>
         </div>
       </section>

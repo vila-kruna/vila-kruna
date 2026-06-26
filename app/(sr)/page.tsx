@@ -91,6 +91,10 @@ export default function Home() {
               worstRating: '1',
               ratingExplanation: 'Booking.com score',
             },
+            sameAs: [
+              'https://www.instagram.com/vila.kruna.beograd/',
+              'https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html'
+            ],
             amenityFeature: [
               {
                 '@type': 'LocationFeatureSpecification',
@@ -120,7 +124,7 @@ export default function Home() {
       <section className="hero" id="hero-section"
         style={{ backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://utfs.io/f/7BAyoiVHGCJelvHRDeY43o2rhvXi6WazDQ9IB51uFONndpYx')" }}>
         <div className="hero-content">
-          <h1 className="hero-title">Vila Kruna</h1>
+          <h1 className="hero-title">Vila Kruna — Smeštaj u Beogradu</h1>
           <p className="hero-subtitle">Vaš mir u Beogradu. Novo, prostrano, čisto — 15 min od centra.</p>
           <div className="hero-buttons">
             <Link href="/rezervacija" className="btn btn-primary" id="hero-cta-booking">
@@ -179,14 +183,9 @@ export default function Home() {
               <h2>Dobrodošli u Vilu Kruna</h2>
 
               <div>
-                <p>Vila Kruna je moderno opremljena vila u mirnom prigradskom naselju, na samo petnaest minuta
-                  vožnje od centra Beograda. Idealno za putnike koji idu na duži put i prolaze kroz Beograd, poslovne goste,
-                  parove ili kraće
-                  boravke — nudimo prostrane
-                  sobe, toplo gostoprimstvo i sve što vam treba za udoban odmor.</p>
-                <p>Sve sobe su novoopremljene, čiste i udobne. Ističemo prostranost, moderno okruženje i prijateljsku
-                  atmosferu.</p>
-                <p>Besplatan parking i WiFi su uključeni.</p>
+                <p>Vila Kruna je moderno opremljena vila u mirnom beogradskom naselju Rakovica, idealna za sve koji traže <Link href="/tih-miran-kutak-sa-parkingom">tih i miran smeštaj sa besplatnim parkingom u Beogradu</Link>. Nalazimo se na odličnoj poziciji pa je stoga izuzetno <Link href="/kako-do-nas-sa-autoputa">lako doći do nas sa auto-puta ili obilaznice</Link> iz svih pravaca.</p>
+                <p>Nudimo Vam izuzetno prostrane i klimatizovane sobe stvorene za vrhunski odmor. Bilo da Vam je potreban diskretan <Link href="/dnevni-smestaj">dnevni odmor i dnevni smeštaj</Link> tokom tranzita kroz Srbiju, udoban kutak za parove ili pak komforan <Link href="/grupe-i-porodice">smeštaj za veće grupe i porodična putovanja</Link> — Vila Kruna je Vaš pravi izbor.</p>
+                <p>Za one koji traže dodatnu dozu opuštanja, preporučujemo našu premium <Link href="/superior-soba">superior sobu sa saunom i đakuzijem</Link> u kojoj ćete se osvežiti i potpuno regenerisati.</p>
               </div>
 
               <div style={{ marginTop: '32px' }}>

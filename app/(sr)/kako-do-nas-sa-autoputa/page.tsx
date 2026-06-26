@@ -19,7 +19,7 @@ export default function KakoDoNasPage() {
     <>
       <section className="page-header" id="highway-guide-header">
         <div className="container">
-          <h1>Kako do nas sa auto-puta</h1>
+          <h1>Kako doći do Vile Kruna u Beogradu sa auto-puta</h1>
           <p>Kratak i jednostavan vodič za brzi dolazak do Vile Kruna sa glavnih putnih pravaca.</p>
         </div>
       </section>
@@ -41,7 +41,7 @@ export default function KakoDoNasPage() {
               </p>
               <ol style={{ paddingLeft: '20px', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li>Isključite se na petlji <strong>Orlovača</strong> ka Ibarskoj magistrali (smer Rakovica/Centar).</li>
-                <li>Nastavite pravo ulicom Patrijarha Dimitrija.</li>
+                <li>Nastavite pravo magistralom i isključite se na kružni put ka Resniku.</li>
                 <li>Skrenite desno u ulicu Svetozara Ivačkovića gde se nalazi Vila Kruna.</li>
               </ol>
             </div>
@@ -69,8 +69,8 @@ export default function KakoDoNasPage() {
               </p>
               <ol style={{ paddingLeft: '20px', color: 'var(--text-primary)', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <li>Vozite Bulevarom vojvode Mišića pored Sajma, pa preko Topčiderske reke prođite pored parka Topčider.</li>
-                <li>Nastavite pravo Bulevarom Patrijarha Pavla i Patrijarha Dimitrija direktno ka Rakovici.</li>
-                <li>Put je direktan, brz i bez komplikovanih skretanja.</li>
+                <li>Nastavite pravo Bulevarom Patrijarha Pavla i Patrijarha Dimitrija direktno ka tržnom centru BIG Rakovica.</li>
+                <li>Na dalje put je direktan, brz i bez komplikovanih skretanja ulicom Oslobodilaca Rakovice.</li>
               </ol>
             </div>
           </div>

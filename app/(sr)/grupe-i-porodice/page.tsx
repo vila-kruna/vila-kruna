@@ -19,7 +19,7 @@ export default function GrupeIPorodicePage() {
     <>
       <section className="page-header" id="groups-families-header">
         <div className="container">
-          <h1>Smeštaj za Grupe i Porodice</h1>
+          <h1>Smeštaj za grupe i porodice u Beogradu — Vila Kruna</h1>
           <p>Udobne, prostrane i povezane sobe idealne za porodična putovanja i grupne posete Beogradu.</p>
         </div>
       </section>

@@ -76,6 +76,10 @@ export default function EnglishHomePage() {
               worstRating: '1',
               ratingExplanation: 'Booking.com score',
             },
+            sameAs: [
+              'https://www.instagram.com/vila.kruna.beograd/',
+              'https://www.booking.com/hotel/rs/vila-kruna-beograd.sr.html'
+            ],
             amenityFeature: [
               {
                 '@type': 'LocationFeatureSpecification',
@@ -104,7 +108,7 @@ export default function EnglishHomePage() {
       <section className="hero" id="hero-section"
         style={{ backgroundImage: "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)), url('https://utfs.io/f/7BAyoiVHGCJelvHRDeY43o2rhvXi6WazDQ9IB51uFONndpYx')" }}>
         <div className="hero-content">
-          <h1 className="hero-title">Vila Kruna</h1>
+          <h1 className="hero-title">Vila Kruna — Accommodation in Belgrade</h1>
           <p className="hero-subtitle">Your peace in Belgrade. Newly furnished, spacious, clean — 15 min from center.</p>
           <div className="hero-buttons">
             <Link href="/en/booking" className="btn btn-primary" id="hero-cta-booking">
@@ -159,13 +163,9 @@ export default function EnglishHomePage() {
             <div className="about-text">
               <h2>Welcome to Vila Kruna</h2>
               <div>
-                <p>Vila Kruna is a modernly equipped villa in a peaceful suburban neighborhood, just a fifteen-minute
-                  drive from Belgrade city center. Ideal for travelers passing through Belgrade on longer journeys, business
-                  guests, couples, or short stays — we offer spacious
-                  rooms, warm hospitality, and everything you need for a comfortable rest.</p>
-                <p>All rooms are newly furnished, clean, and comfortable. We take pride in spaciousness, modern
-                  surroundings, and a friendly atmosphere.</p>
-                <p>Free parking and WiFi are included.</p>
+                <p>Vila Kruna is a modern villa in a peaceful Belgrade suburb, offering the perfect solution for anyone searching for <Link href="/en/quiet-peaceful-corner-with-parking">quiet and comfortable accommodation with free parking in Belgrade</Link>. Thanks to our strategic location, it is extremely <Link href="/en/how-to-reach-us-from-highway">easy to reach us from the highway or bypass road</Link>.</p>
+                <p>We pride ourselves on our highly spacious, air-conditioned rooms designed for complete rest. Whether you need a short and discreet <Link href="/en/day-use-accommodation">day use rest or daytime accommodation</Link> during your journey, or comfortable <Link href="/en/groups-and-families">lodging for groups and family trips</Link> in Belgrade, we cater to all your needs.</p>
+                <p>For guests seeking a touch of premium luxury, we recommend booking our exclusive <Link href="/en/superior-room">superior room with a private sauna and jacuzzi</Link> to refresh and fully unwind.</p>
               </div>
               <div style={{ marginTop: '32px' }}>
                 <Link href="/en/accommodation" className="btn btn-secondary" id="about-learn-more">

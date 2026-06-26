@@ -1,7 +1,7 @@
-'use client';
-
-import React, { useState } from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import Script from 'next/script';
+import FaqSection from '../../components/FaqSection';
 
 interface FAQItem {
   question: string;
@@ -35,18 +35,43 @@ const faqData: FAQItem[] = [
   }
 ];
 
-export default function DnevniSmestajPage() {
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
+export const metadata: Metadata = {
+  title: 'Dnevni smeštaj i dnevni odmor u Beogradu | Vila Kruna',
+  description: 'Tražite dnevni smeštaj ili dnevni odmor na nekoliko sati u Beogradu? Vila Kruna nudi komforne, klimatizovane sobe sa parkingom i potpunom diskrecijom.',
+  alternates: {
+    canonical: '/dnevni-smestaj',
+  },
+  openGraph: {
+    title: 'Dnevni smeštaj i dnevni odmor u Beogradu | Vila Kruna',
+    description: 'Tražite dnevni smeštaj ili dnevni odmor na nekoliko sati u Beogradu? Vila Kruna nudi komforne, klimatizovane sobe sa parkingom.',
+    url: '/dnevni-smestaj',
+  },
+};
 
-  const toggleFAQ = (index: number) => {
-    setOpenIndex(openIndex === index ? null : index);
+export default function DnevniSmestajPage() {
+  const faqSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: faqData.map(item => ({
+      '@type': 'Question',
+      name: item.question,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: item.answer
+      }
+    }))
   };
 
   return (
     <>
+      <Script
+        id="faq-schema-day-use"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <section className="page-header" id="day-use-header">
         <div className="container">
-          <h1>Dnevni Smeštaj i Dnevni Odmor</h1>
+          <h1>Dnevni smeštaj i dnevni odmor u Beogradu — Vila Kruna</h1>
           <p>Potreban Vam je kratak predah tokom dana? Rezervišite sobu za odmor, tuširanje i osveženje.</p>
         </div>
       </section>
@@ -54,9 +79,9 @@ export default function DnevniSmestajPage() {
       <section className="section" id="day-use-content">
         <div className="container">
           <div className="about-grid" style={{ marginBottom: '60px' }}>
-            <div
-              className="about-img"
-              style={{
+            <div 
+              className="about-img" 
+              style={{ 
                 backgroundImage: "url('https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF')",
                 border: '1px solid var(--border-color)',
                 boxShadow: 'var(--shadow-lg)'
@@ -89,59 +114,7 @@ export default function DnevniSmestajPage() {
 
           <div style={{ maxWidth: '800px', margin: '0 auto 60px' }}>
             <h2 className="section-title text-center" style={{ marginBottom: '30px' }}>Često Postavljana Pitanja (FAQ)</h2>
-
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
-              {faqData.map((faq, idx) => {
-                const isOpen = openIndex === idx;
-                return (
-                  <div
-                    key={idx}
-                    style={{
-                      background: 'var(--white)',
-                      borderRadius: 'var(--border-radius)',
-                      border: '1px solid var(--border-color)',
-                      overflow: 'hidden',
-                      transition: 'var(--transition)'
-                    }}
-                  >
-                    <button
-                      onClick={() => toggleFAQ(idx)}
-                      style={{
-                        width: '100%',
-                        padding: '20px 24px',
-                        background: 'none',
-                        border: 'none',
-                        textAlign: 'left',
-                        color: 'var(--text-primary)',
-                        fontSize: '1.05rem',
-                        fontWeight: '600',
-                        cursor: 'pointer',
-                        display: 'flex',
-                        justifyContent: 'space-between',
-                        alignItems: 'center',
-                        gap: '15px'
-                      }}
-                    >
-                      <span>{faq.question}</span>
-                      <i className={`fa-solid fa-chevron-down`} style={{ color: 'var(--primary)', transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}></i>
-                    </button>
-                    {isOpen && (
-                      <div
-                        style={{
-                          padding: '0 24px 20px 24px',
-                          color: 'var(--text-secondary)',
-                          lineHeight: '1.6',
-                          borderTop: '1px solid rgba(255, 255, 255, 0.05)',
-                          paddingTop: '15px'
-                        }}
-                      >
-                        {faq.answer}
-                      </div>
-                    )}
-                  </div>
-                );
-              })}
-            </div>
+            <FaqSection items={faqData} />
           </div>
 
           <div className="text-center">

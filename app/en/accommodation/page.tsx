@@ -1,64 +1,32 @@
-'use client';
+import type { Metadata } from 'next';
+import RoomDetailCard from '../../components/RoomDetailCard';
 
-import React, { useState } from 'react';
-
-import Link from 'next/link';
-
-function RoomDetailCard({
-  id, title, metaTags, description, specs, price, mainImage, thumbnails, bgData
-}: {
-  id: string, title: string, metaTags: React.ReactNode, description: string, specs: React.ReactNode, price: string, mainImage: string, thumbnails: string[], bgData: string
-}) {
-  const [activeImg, setActiveImg] = useState(mainImage);
-
-  return (
-    <div className="room-detail-card" id={id}>
-      <div className="room-gallery-wrapper">
-        <div className="room-main-img"
-          style={{ backgroundImage: `url('${activeImg}')` }}></div>
-        <div className="room-thumbnails">
-          {thumbnails.map((thumb, idx) => (
-            <div key={idx} className={`room-thumb ${activeImg === thumb ? 'active' : ''}`}
-              style={{ backgroundImage: `url('${thumb}')` }}
-              onClick={() => setActiveImg(thumb)}></div>
-          ))}
-        </div>
-      </div>
-      <div className="room-details-side">
-        <div>
-          <div className="room-meta-tags">
-            {metaTags}
-          </div>
-          <h2 className="room-title-large">{title}</h2>
-          <p className="room-long-desc">{description}</p>
-          <div className="room-specs-list">
-            {specs}
-          </div>
-        </div>
-        <div className="room-booking-panel">
-          <div className="room-price">
-            <span>{price}</span>
-          </div>
-          <Link href="/en/booking" className="btn btn-primary">Book Now &rarr;</Link>
-        </div>
-      </div>
-    </div>
-  );
-}
+export const metadata: Metadata = {
+  title: 'Accommodation in Belgrade — Vila Kruna | Booking.com 9.0',
+  description: 'Choose the perfect accommodation in Belgrade. We offer spacious standard, economy, deluxe, and superior rooms with private sauna and hot tub. Free parking and WiFi.',
+  alternates: {
+    canonical: '/en/accommodation',
+  },
+  openGraph: {
+    title: 'Accommodation in Belgrade — Vila Kruna | Booking.com 9.0',
+    description: 'Choose the perfect accommodation in Belgrade. We offer spacious standard, economy, deluxe, and superior rooms with private sauna and hot tub.',
+    url: '/en/accommodation',
+  },
+};
 
 export default function AccommodationPage() {
   return (
     <>
       <section className="page-header" id="accommodation-header">
         <div className="container">
-          <h1>Our Accommodation</h1>
+          <h1>Accommodation in Belgrade — Vila Kruna</h1>
           <p>Discover our spacious rooms designed for your maximum comfort.</p>
         </div>
       </section>
 
       <section className="section" id="accommodation-list-section">
         <div className="container">
-
+          
           <RoomDetailCard
             id="room-detail-superior"
             bgData="https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF"
@@ -72,6 +40,7 @@ export default function AccommodationPage() {
             title="Superior Room with King-size Bed"
             description="Our most luxurious 65m² unit created for true enjoyment. It features an extra-large double bed and a comfortable pull-out sofa. Relax with a private sauna, hot tub, and mini-bar included in this unique accommodation."
             price="From 5.750 RSD"
+            bookingUrl="/en/booking"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-crown"></i> &nbsp;Premium</span>
@@ -106,6 +75,7 @@ export default function AccommodationPage() {
             title="Deluxe Double/Twin Room"
             description="The more spacious 35m² deluxe room is perfect for guests who like more space. It is equipped with a double bed and a comfortable pull-out sofa."
             price="From 3.500 RSD"
+            bookingUrl="/en/booking"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-bed"></i> &nbsp;Deluxe</span>
@@ -138,6 +108,7 @@ export default function AccommodationPage() {
             title="Economy Double Room"
             description="Our 30m² economy room offers excellent comfort at an affordable price. It features one extra-large double bed and is ideal for couples and short city stays."
             price="From 3.300 RSD"
+            bookingUrl="/en/booking"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-bed"></i> &nbsp;Room</span>
@@ -170,6 +141,7 @@ export default function AccommodationPage() {
             title="Standard Room with Sofa"
             description="This 30m² room is equipped with two comfortable single beds and an additional pull-out sofa. Located on a higher floor, it provides a quiet atmosphere and is equipped with all necessary amenities for a pleasant stay."
             price="From 2.800 RSD"
+            bookingUrl="/en/booking"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-bed"></i> &nbsp;Room</span>

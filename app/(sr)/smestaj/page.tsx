@@ -1,64 +1,32 @@
-'use client';
+import type { Metadata } from 'next';
+import RoomDetailCard from '../../components/RoomDetailCard';
 
-import React, { useState } from 'react';
-
-import Link from 'next/link';
-
-function RoomDetailCard({
-  id, title, metaTags, description, specs, price, mainImage, thumbnails, bgData
-}: {
-  id: string, title: string, metaTags: React.ReactNode, description: string, specs: React.ReactNode, price: string, mainImage: string, thumbnails: string[], bgData: string
-}) {
-  const [activeImg, setActiveImg] = useState(mainImage);
-
-  return (
-    <div className="room-detail-card" id={id}>
-      <div className="room-gallery-wrapper">
-        <div className="room-main-img"
-          style={{ backgroundImage: `url('${activeImg}')` }}></div>
-        <div className="room-thumbnails">
-          {thumbnails.map((thumb, idx) => (
-            <div key={idx} className={`room-thumb ${activeImg === thumb ? 'active' : ''}`}
-              style={{ backgroundImage: `url('${thumb}')` }}
-              onClick={() => setActiveImg(thumb)}></div>
-          ))}
-        </div>
-      </div>
-      <div className="room-details-side">
-        <div>
-          <div className="room-meta-tags">
-            {metaTags}
-          </div>
-          <h2 className="room-title-large">{title}</h2>
-          <p className="room-long-desc">{description}</p>
-          <div className="room-specs-list">
-            {specs}
-          </div>
-        </div>
-        <div className="room-booking-panel">
-          <div className="room-price">
-            <span>{price}</span>
-          </div>
-          <Link href="/rezervacija" className="btn btn-primary">Rezerviši smeštaj &rarr;</Link>
-        </div>
-      </div>
-    </div>
-  );
-}
+export const metadata: Metadata = {
+  title: 'Smeštaj u Beogradu — Vila Kruna | Booking.com 9.0',
+  description: 'Izaberite savršen smeštaj u Beogradu. Nudimo prostrane standardne, economy, deluxe i superior sobe sa saunom i đakuzijem. Besplatan parking i WiFi.',
+  alternates: {
+    canonical: '/smestaj',
+  },
+  openGraph: {
+    title: 'Smeštaj u Beogradu — Vila Kruna | Booking.com 9.0',
+    description: 'Izaberite savršen smeštaj u Beogradu. Nudimo prostrane standardne, economy, deluxe i superior sobe sa saunom i đakuzijem.',
+    url: '/smestaj',
+  },
+};
 
 export default function SmestajPage() {
   return (
     <>
       <section className="page-header" id="accommodation-header">
         <div className="container">
-          <h1>Smeštaj</h1>
+          <h1>Smeštaj u Beogradu — Vila Kruna</h1>
           <p>Upoznajte se sa našim prostranim sobama opremljenim za Vaš maksimalan komfor.</p>
         </div>
       </section>
 
       <section className="section" id="accommodation-list-section">
         <div className="container">
-
+          
           <RoomDetailCard
             id="room-detail-superior"
             bgData="https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF"
@@ -72,6 +40,7 @@ export default function SmestajPage() {
             title="Superior Soba s King-sajz Krevetom"
             description="Naša najraskošnija jedinica od 65m² kreirana za pravo uživanje. Sadrži jedan ekstra veliki bračni krevet i udoban kauč na razvlačenje. Opustite se uz privatnu saunu, hidromasažnu kadu i mini-bar koji su deo ovog jedinstvenog smeštaja."
             price="Od 5.750 RSD"
+            bookingUrl="/rezervacija"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-crown"></i> &nbsp;Premium</span>
@@ -106,6 +75,7 @@ export default function SmestajPage() {
             title="Deluks Dvokrevetna Soba"
             description="Prostranija deluks soba od 35m² savršena je za goste koji vole veće prostranstvo. Opremljena je sa bračnim krevetom i udobnim kaučem na razvlačenje."
             price="Od 3.500 RSD"
+            bookingUrl="/rezervacija"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-bed"></i> &nbsp;Deluks</span>
@@ -138,6 +108,7 @@ export default function SmestajPage() {
             title="Economy Dvokrevetna Soba"
             description="Naša economy soba od 30m² pruža odličan komfor po pristupačnoj ceni. Sadrži jedan ekstra veliki bračni krevet i idealna je za parove i kraće boravke u gradu."
             price="Od 3.300 RSD"
+            bookingUrl="/rezervacija"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-bed"></i> &nbsp;Soba</span>
@@ -170,6 +141,7 @@ export default function SmestajPage() {
             title="Standardna Soba sa Sofom"
             description="Ova soba površine 30m² opremljena je sa dva udobna kreveta za jednu osobu i dodatnim kaučem na razvlačenje. Soba se nalazi na višem spratu, pruža mir i opremljena je svim potrebnim sadržajima za prijatan boravak."
             price="Od 2.800 RSD"
+            bookingUrl="/rezervacija"
             metaTags={
               <>
                 <span className="room-meta-tag"><i className="fa-solid fa-bed"></i> &nbsp;Soba</span>

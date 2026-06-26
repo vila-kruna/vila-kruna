@@ -19,7 +19,7 @@ export default function GroupsAndFamiliesPage() {
     <>
       <section className="page-header" id="groups-families-header">
         <div className="container">
-          <h1>Accommodation for Groups & Families</h1>
+          <h1>Accommodation for Groups & Families in Belgrade — Vila Kruna</h1>
           <p>Comfortable, spacious, and connected rooms ideal for family trips and group visits to Belgrade.</p>
         </div>
       </section>

@@ -19,7 +19,7 @@ export default function MiranKutakPage() {
     <>
       <section className="page-header" id="quiet-corner-header">
         <div className="container">
-          <h1>Tih i miran kutak sa parkingom</h1>
+          <h1>Tih i miran smeštaj sa parkingom u Beogradu — Vila Kruna</h1>
           <p>Odmorite se u mirnom okruženju sa obezbeđenim besplatnim privatnim parkingom za Vaš automobil.</p>
         </div>
       </section>

@@ -19,7 +19,7 @@ export default function QuietCornerPage() {
     <>
       <section className="page-header" id="quiet-corner-header">
         <div className="container">
-          <h1>Quiet & Peaceful Corner with Parking</h1>
+          <h1>Quiet & Peaceful Accommodation with Parking in Belgrade — Vila Kruna</h1>
           <p>Relax in a peaceful environment with free private parking provided for your vehicle.</p>
         </div>
       </section>

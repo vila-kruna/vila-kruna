@@ -1,10 +1,21 @@
-'use client';
-
-import React, { useState } from 'react';
+import type { Metadata } from 'next';
 import Link from 'next/link';
+import RoomGallery from '../../components/RoomGallery';
+
+export const metadata: Metadata = {
+  title: 'Superior soba sa saunom i đakuzijem u Beogradu | Vila Kruna',
+  description: 'Rezervišite superior sobu sa sopstvenom finskom saunom i hidromasažnom đakuzi kadom u Beogradu. 65m² čistog luksuza, besplatan parking i WiFi.',
+  alternates: {
+    canonical: '/superior-soba',
+  },
+  openGraph: {
+    title: 'Superior soba sa saunom i đakuzijem u Beogradu | Vila Kruna',
+    description: 'Rezervišite superior sobu sa sopstvenom finskom saunom i hidromasažnom đakuzi kadom u Beogradu. 65m² čistog luksuza.',
+    url: '/superior-soba',
+  },
+};
 
 export default function SuperiorSobaPage() {
-  const mainImage = "https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF";
   const thumbnails = [
     "https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF",
     "https://utfs.io/f/7BAyoiVHGCJe28vDdJsjWxN9zdEUKa1O4mc8He07DiboJvLk",
@@ -12,13 +23,11 @@ export default function SuperiorSobaPage() {
     "https://utfs.io/f/7BAyoiVHGCJeCt235AnJqLhaVXvwsKWTQ24RuMo5NZF79DUf"
   ];
 
-  const [activeImg, setActiveImg] = useState(mainImage);
-
   return (
     <>
       <section className="page-header" id="superior-room-header">
         <div className="container">
-          <h1>Superior Soba sa Saunom i Đakuzijem</h1>
+          <h1>Superior soba sa saunom i đakuzijem u Beogradu — Vila Kruna</h1>
           <p>Otkrijte naš najluksuzniji smeštaj kreiran za apsolutno uživanje i relaksaciju.</p>
         </div>
       </section>
@@ -26,19 +35,7 @@ export default function SuperiorSobaPage() {
       <section className="section" id="superior-room-content">
         <div className="container">
           <div className="room-detail-card" style={{ border: '1px solid var(--primary)', boxShadow: '0 10px 30px rgba(197, 160, 89, 0.15)' }}>
-            <div className="room-gallery-wrapper">
-              <div className="room-main-img" style={{ backgroundImage: `url('${activeImg}')` }}></div>
-              <div className="room-thumbnails">
-                {thumbnails.map((thumb, idx) => (
-                  <div
-                    key={idx}
-                    className={`room-thumb ${activeImg === thumb ? 'active' : ''}`}
-                    style={{ backgroundImage: `url('${thumb}')` }}
-                    onClick={() => setActiveImg(thumb)}
-                  ></div>
-                ))}
-              </div>
-            </div>
+            <RoomGallery thumbnails={thumbnails} />
 
             <div className="room-details-side">
               <div>
