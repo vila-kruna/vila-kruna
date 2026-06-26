@@ -43,7 +43,9 @@ export default function CenovnikPage() {
               <tbody>
                 <tr>
                   <td>
-                    <strong>Standardna Soba sa Sofom</strong>
+                    <Link href="/smestaj#room-detail-standard" className="price-table-link">
+                      <strong>Standardna Soba sa Sofom</strong>
+                    </Link>
                   </td>
                   <td>
                     <i className="fa-solid fa-user-group"></i> &nbsp;1-3 osobe
@@ -53,7 +55,9 @@ export default function CenovnikPage() {
                 </tr>
                 <tr>
                   <td>
-                    <strong>Economy Dvokrevetna Soba</strong>
+                    <Link href="/smestaj#room-detail-economy" className="price-table-link">
+                      <strong>Economy Dvokrevetna Soba</strong>
+                    </Link>
                   </td>
                   <td>
                     <i className="fa-solid fa-user-group"></i> &nbsp;1-2 osobe
@@ -63,7 +67,9 @@ export default function CenovnikPage() {
                 </tr>
                 <tr>
                   <td>
-                    <strong>Deluks Dvokrevetna Soba</strong>
+                    <Link href="/smestaj#room-detail-deluxe" className="price-table-link">
+                      <strong>Deluks Dvokrevetna Soba</strong>
+                    </Link>
                   </td>
                   <td>
                     <i className="fa-solid fa-user-group"></i> &nbsp;1-3 osobe
@@ -73,7 +79,9 @@ export default function CenovnikPage() {
                 </tr>
                 <tr>
                   <td>
-                    <strong>Superior Soba s King-sajz Krevetom</strong>
+                    <Link href="/superior-soba" className="price-table-link">
+                      <strong>Superior Soba s King-sajz Krevetom</strong>
+                    </Link>
                   </td>
                   <td>
                     <i className="fa-solid fa-user-group"></i> &nbsp;1-3 osobe

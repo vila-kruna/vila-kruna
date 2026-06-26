@@ -42,25 +42,41 @@ export default function PricingPage() {
               </thead>
               <tbody>
                 <tr>
-                  <td><strong>Standard Room with Sofa</strong></td>
+                  <td>
+                    <Link href="/en/accommodation#room-detail-standard" className="price-table-link">
+                      <strong>Standard Room with Sofa</strong>
+                    </Link>
+                  </td>
                   <td><i className="fa-solid fa-user-group"></i> &nbsp;1-3 guests</td>
                   <td className="price-val">2.800 – 3.900 RSD</td>
                   <td className="price-val">~23 – 33 EUR</td>
                 </tr>
                 <tr>
-                  <td><strong>Economy Double Room</strong></td>
+                  <td>
+                    <Link href="/en/accommodation#room-detail-economy" className="price-table-link">
+                      <strong>Economy Double Room</strong>
+                    </Link>
+                  </td>
                   <td><i className="fa-solid fa-user-group"></i> &nbsp;1-2 guests</td>
                   <td className="price-val">3.300 – 4600 RSD</td>
                   <td className="price-val">~28 – 39 EUR</td>
                 </tr>
                 <tr>
-                  <td><strong>Deluxe Double/Twin Room</strong></td>
+                  <td>
+                    <Link href="/en/accommodation#room-detail-deluxe" className="price-table-link">
+                      <strong>Deluxe Double/Twin Room</strong>
+                    </Link>
+                  </td>
                   <td><i className="fa-solid fa-user-group"></i> &nbsp;1-3 guests</td>
                   <td className="price-val">3.300 – 4600 RSD</td>
                   <td className="price-val">~28 – 39 EUR</td>
                 </tr>
                 <tr>
-                  <td><strong>Superior Room with King-size Bed</strong></td>
+                  <td>
+                    <Link href="/en/superior-room" className="price-table-link">
+                      <strong>Superior Room with King-size Bed</strong>
+                    </Link>
+                  </td>
                   <td><i className="fa-solid fa-user-group"></i> &nbsp;1-3 guests</td>
                   <td className="price-val">5.750 – 7750 RSD</td>
                   <td className="price-val">~48 – 65 EUR</td>

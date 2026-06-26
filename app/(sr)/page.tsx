@@ -277,7 +277,7 @@ export default function Home() {
                   <div className="room-price">
                     Od <span>2.800 RSD</span>
                   </div>
-                  <Link href="/smestaj" className="btn btn-primary" id="room-standard-learn-more">Detalji &rarr;</Link>
+                  <Link href="/smestaj#room-detail-standard" className="btn btn-primary" id="room-standard-learn-more">Detalji &rarr;</Link>
                 </div>
               </div>
             </div>
@@ -299,7 +299,7 @@ export default function Home() {
                   <div className="room-price">
                     Od <span>3.300 RSD</span>
                   </div>
-                  <Link href="/smestaj" className="btn btn-primary" id="room-economy-learn-more">Detalji &rarr;</Link>
+                  <Link href="/smestaj#room-detail-economy" className="btn btn-primary" id="room-economy-learn-more">Detalji &rarr;</Link>
                 </div>
               </div>
             </div>
@@ -323,7 +323,7 @@ export default function Home() {
                   <div className="room-price">
                     Od <span>3.500 RSD</span>
                   </div>
-                  <Link href="/smestaj" className="btn btn-primary" id="room-deluks-learn-more">Detalji &rarr;</Link>
+                  <Link href="/smestaj#room-detail-deluxe" className="btn btn-primary" id="room-deluks-learn-more">Detalji &rarr;</Link>
                 </div>
               </div>
             </div>
@@ -347,7 +347,7 @@ export default function Home() {
                   <div className="room-price">
                     Od <span>5.750 RSD</span>
                   </div>
-                  <Link href="/smestaj" className="btn btn-primary" id="room-superior-learn-more">Detalji &rarr;</Link>
+                  <Link href="/superior-soba" className="btn btn-primary" id="room-superior-learn-more">Detalji &rarr;</Link>
                 </div>
               </div>
             </div>

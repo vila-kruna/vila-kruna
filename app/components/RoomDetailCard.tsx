@@ -55,8 +55,14 @@ export default function RoomDetailCard({
           <div className="room-specs-list">{specs}</div>
         </div>
         <div className="room-booking-panel">
-          <div className="room-price">
+          <div className="room-price" style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
             <span>{price}</span>
+            <Link
+              href={bookingUrl.startsWith('/en') ? '/en/pricing' : '/cenovnik'}
+              className="room-pricing-link"
+            >
+              {bookingUrl.startsWith('/en') ? 'View full pricing list' : 'Pogledajte kompletan cenovnik'}
+            </Link>
           </div>
           <Link href={bookingUrl} className="btn btn-primary">
             {bookingUrl.startsWith('/en') ? 'Book Now' : 'Rezerviši smeštaj'} &rarr;

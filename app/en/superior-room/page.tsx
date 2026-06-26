@@ -68,6 +68,9 @@ export default function SuperiorRoomPage() {
                 <div className="room-price" style={{ display: 'flex', flexDirection: 'column' }}>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Rates from</span>
                   <span style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--primary)', fontFamily: 'var(--font-playfair)' }}>5,750 RSD <span style={{ fontSize: '1rem', color: 'var(--text-secondary)', fontWeight: 'normal' }}>/ night</span></span>
+                  <Link href="/en/pricing" className="room-pricing-link" style={{ marginTop: '6px' }}>
+                    View full pricing sheet
+                  </Link>
                 </div>
                 <Link href="/en/booking" className="btn btn-primary" style={{ padding: '16px 32px' }}>
                   Book Superior Room &rarr;

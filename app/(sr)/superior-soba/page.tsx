@@ -68,6 +68,9 @@ export default function SuperiorSobaPage() {
                 <div className="room-price" style={{ display: 'flex', flexDirection: 'column' }}>
                   <span style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', textTransform: 'uppercase' }}>Cena već od</span>
                   <span style={{ fontSize: '2rem', fontWeight: 'bold', color: 'var(--primary)', fontFamily: 'var(--font-playfair)' }}>5.750 RSD <span style={{ fontSize: '1rem', color: 'var(--text-secondary)', fontWeight: 'normal' }}>/ noć</span></span>
+                  <Link href="/cenovnik" className="room-pricing-link" style={{ marginTop: '6px' }}>
+                    Pogledajte kompletan cenovnik
+                  </Link>
                 </div>
                 <Link href="/rezervacija" className="btn btn-primary" style={{ padding: '16px 32px' }}>
                   Rezervišite Superior Sobu &rarr;

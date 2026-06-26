@@ -251,7 +251,7 @@ export default function EnglishHomePage() {
                   <div className="room-price">
                     From <span>2.800 RSD</span>
                   </div>
-                  <Link href="/en/accommodation" className="btn btn-primary" id="room-standard-learn-more">Details &rarr;</Link>
+                  <Link href="/en/accommodation#room-detail-standard" className="btn btn-primary" id="room-standard-learn-more">Details &rarr;</Link>
                 </div>
               </div>
             </div>
@@ -271,7 +271,7 @@ export default function EnglishHomePage() {
                   <div className="room-price">
                     From <span>3.300 RSD</span>
                   </div>
-                  <Link href="/en/accommodation" className="btn btn-primary" id="room-economy-learn-more">Details &rarr;</Link>
+                  <Link href="/en/accommodation#room-detail-economy" className="btn btn-primary" id="room-economy-learn-more">Details &rarr;</Link>
                 </div>
               </div>
             </div>
@@ -293,7 +293,7 @@ export default function EnglishHomePage() {
                   <div className="room-price">
                     From <span>3.500 RSD</span>
                   </div>
-                  <Link href="/en/accommodation" className="btn btn-primary" id="room-deluks-learn-more">Details &rarr;</Link>
+                  <Link href="/en/accommodation#room-detail-deluxe" className="btn btn-primary" id="room-deluks-learn-more">Details &rarr;</Link>
                 </div>
               </div>
             </div>
@@ -315,7 +315,7 @@ export default function EnglishHomePage() {
                   <div className="room-price">
                     From <span>5.750 RSD</span>
                   </div>
-                  <Link href="/en/accommodation" className="btn btn-primary" id="room-superior-learn-more">Details &rarr;</Link>
+                  <Link href="/en/superior-room" className="btn btn-primary" id="room-superior-learn-more">Details &rarr;</Link>
                 </div>
               </div>
             </div>
