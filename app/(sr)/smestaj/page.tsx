@@ -58,7 +58,7 @@ export default function SmestajPage() {
 
       <section className="section" id="accommodation-list-section">
         <div className="container">
-          
+
           <RoomDetailCard
             id="room-detail-superior"
             bgData="https://utfs.io/f/7BAyoiVHGCJenc84FCkO3WXfeNzPAUHa8t91oGIrqb7YRShF"

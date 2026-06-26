@@ -4,10 +4,17 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { sendGTMEvent } from '@next/third-parties/google';
 
-interface NavItem {
+interface NavSubItem {
   href: string;
   label: string;
   id: string;
+}
+
+interface NavItem {
+  href?: string;
+  label: string;
+  id: string;
+  subItems?: NavSubItem[];
 }
 
 const navItems: Record<string, { left: NavItem[]; right: NavItem[] }> = {
@@ -15,6 +22,17 @@ const navItems: Record<string, { left: NavItem[]; right: NavItem[] }> = {
     left: [
       { href: '/smestaj', label: 'Smeštaj', id: 'nav-accommodation' },
       { href: '/cenovnik', label: 'Cenovnik', id: 'nav-pricing' },
+      {
+        label: 'Korisno',
+        id: 'nav-recommendations',
+        subItems: [
+          { href: '/kako-do-nas-sa-autoputa', label: 'Kako do nas sa auto-puta', id: 'nav-sub-highway' },
+          { href: '/superior-soba', label: 'Superior soba', id: 'nav-sub-superior' },
+          { href: '/tih-miran-kutak-sa-parkingom', label: 'Miran kutak sa parkingom', id: 'nav-sub-quiet' },
+          { href: '/dnevni-smestaj', label: 'Dnevni smeštaj', id: 'nav-sub-dayuse' },
+          { href: '/grupe-i-porodice', label: 'Za grupe i porodice', id: 'nav-sub-groups' },
+        ],
+      },
     ],
     right: [
       { href: '/galerija', label: 'Galerija', id: 'nav-gallery' },
@@ -26,6 +44,17 @@ const navItems: Record<string, { left: NavItem[]; right: NavItem[] }> = {
     left: [
       { href: '/en/accommodation', label: 'Accommodation', id: 'nav-accommodation' },
       { href: '/en/pricing', label: 'Pricing', id: 'nav-pricing' },
+      {
+        label: 'Explore',
+        id: 'nav-explore',
+        subItems: [
+          { href: '/en/how-to-reach-us-from-highway', label: 'How to reach us from highway', id: 'nav-sub-highway' },
+          { href: '/en/superior-room', label: 'Superior Room', id: 'nav-sub-superior' },
+          { href: '/en/quiet-peaceful-corner-with-parking', label: 'Quiet corner with parking', id: 'nav-sub-quiet' },
+          { href: '/en/day-use-accommodation', label: 'Day use', id: 'nav-sub-dayuse' },
+          { href: '/en/groups-and-families', label: 'Groups and families', id: 'nav-sub-groups' },
+        ],
+      },
     ],
     right: [
       { href: '/en/gallery', label: 'Gallery', id: 'nav-gallery' },
@@ -38,6 +67,7 @@ const navItems: Record<string, { left: NavItem[]; right: NavItem[] }> = {
 export default function Header({ lang }: { lang: 'sr' | 'en' }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [expandedDropdowns, setExpandedDropdowns] = useState<Record<string, boolean>>({});
 
   // Sticky header on scroll
   useEffect(() => {
@@ -55,8 +85,24 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
     setIsMenuOpen(false);
   }, []);
 
-  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
-  const closeMenu = () => setIsMenuOpen(false);
+  const toggleMenu = () => {
+    setIsMenuOpen((prev) => !prev);
+    setExpandedDropdowns({});
+  };
+  
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+    setExpandedDropdowns({});
+  };
+
+  const toggleMobileDropdown = (id: string) => {
+    if (window.innerWidth <= 768) {
+      setExpandedDropdowns((prev) => ({
+        ...prev,
+        [id]: !prev[id],
+      }));
+    }
+  };
 
   const items = navItems[lang];
   const homeHref = lang === 'en' ? '/en' : '/';
@@ -73,27 +119,63 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
         <nav className="nav-bar" id="navbar">
           <ul className={`nav-menu${isMenuOpen ? ' active' : ''}`} id="nav-menu-list">
             <div className="nav-left">
-              {items.left.map((item) => (
-                <li key={item.id}>
-                  <Link 
-                    href={item.href} 
-                    className="nav-link" 
-                    id={item.id} 
-                    onClick={() => {
-                      closeMenu();
-                      sendGTMEvent({ event: 'nav_click', destination: item.id });
-                    }}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
+              {items.left.map((item) => {
+                if (item.subItems) {
+                  const isExpanded = expandedDropdowns[item.id] || false;
+                  return (
+                    <li key={item.id} className="nav-item-dropdown">
+                      <button
+                        className="nav-link dropdown-trigger"
+                        id={item.id}
+                        onClick={() => toggleMobileDropdown(item.id)}
+                        aria-expanded={isExpanded}
+                        style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
+                      >
+                        <span>{item.label}</span>
+                        <i className="fa-solid fa-chevron-down caret-icon" style={{ fontSize: '0.75rem', transition: 'transform 0.3s ease', transform: isExpanded ? 'rotate(180deg)' : 'none' }}></i>
+                      </button>
+                      <ul className={`dropdown-menu-list ${isExpanded ? 'mobile-show' : ''}`}>
+                        {item.subItems.map((sub) => (
+                          <li key={sub.id}>
+                            <Link
+                              href={sub.href}
+                              className="dropdown-item-link"
+                              id={sub.id}
+                              onClick={() => {
+                                closeMenu();
+                                sendGTMEvent({ event: 'nav_click', destination: sub.id });
+                              }}
+                            >
+                              {sub.label}
+                            </Link>
+                          </li>
+                        ))}
+                      </ul>
+                    </li>
+                  );
+                }
+                return (
+                  <li key={item.id}>
+                    <Link 
+                      href={item.href || '#'} 
+                      className="nav-link" 
+                      id={item.id} 
+                      onClick={() => {
+                        closeMenu();
+                        sendGTMEvent({ event: 'nav_click', destination: item.id });
+                      }}
+                    >
+                      {item.label}
+                    </Link>
+                  </li>
+                );
+              })}
             </div>
             <div className="nav-right">
               {items.right.map((item) => (
                 <li key={item.id}>
                   <Link 
-                    href={item.href} 
+                    href={item.href || '#'} 
                     className="nav-link" 
                     id={item.id} 
                     onClick={() => {

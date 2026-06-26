@@ -15,6 +15,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/galerija`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/novosti`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/rezervacija`, changeFrequency: 'yearly', priority: 0.5 },
+    // New Serbian SEO pages
+    { url: `${baseUrl}/kako-do-nas-sa-autoputa`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/superior-soba`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/tih-miran-kutak-sa-parkingom`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/dnevni-smestaj`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/grupe-i-porodice`, changeFrequency: 'monthly', priority: 0.7 },
     // English
     { url: `${baseUrl}/en`, changeFrequency: 'weekly', priority: 1.0 },
     { url: `${baseUrl}/en/accommodation`, changeFrequency: 'monthly', priority: 0.8 },
@@ -22,6 +28,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/en/gallery`, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${baseUrl}/en/news`, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${baseUrl}/en/booking`, changeFrequency: 'yearly', priority: 0.5 },
+    // New English SEO pages
+    { url: `${baseUrl}/en/how-to-reach-us-from-highway`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/en/superior-room`, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${baseUrl}/en/quiet-peaceful-corner-with-parking`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/en/day-use-accommodation`, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${baseUrl}/en/groups-and-families`, changeFrequency: 'monthly', priority: 0.7 },
   ];
 
   const blogPagesSr: MetadataRoute.Sitemap = postsSr.map(post => ({
