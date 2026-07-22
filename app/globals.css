@@ -495,10 +495,9 @@ body.lang-en .lang-sr {
   padding-left: 24px;
 }
 
-/* Show on hover in desktop */
+/* Show when open state class is active */
 @media (min-width: 769px) {
-  .nav-item-dropdown:hover .dropdown-menu-list,
-  .nav-item-dropdown:focus-within .dropdown-menu-list {
+  .dropdown-menu-list.open {
     opacity: 1;
     visibility: visible;
     transform: translateX(-50%) translateY(0);
@@ -1721,7 +1720,7 @@ textarea.form-control {
     margin-top: 5px;
   }
 
-  .dropdown-menu-list.mobile-show {
+  .dropdown-menu-list.open {
     display: flex;
   }
 

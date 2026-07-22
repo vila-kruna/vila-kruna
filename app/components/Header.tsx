@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { sendGTMEvent } from '@next/third-parties/google';
 
 interface NavSubItem {
@@ -89,9 +90,10 @@ const navItems: Record<string, { left: NavItem[]; right: NavItem[] }> = {
 };
 
 export default function Header({ lang }: { lang: 'sr' | 'en' }) {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [expandedDropdowns, setExpandedDropdowns] = useState<Record<string, boolean>>({});
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   // Sticky header on scroll
   useEffect(() => {
@@ -104,28 +106,26 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Close menu on route change (when component unmounts/remounts)
-  useEffect(() => {
+  const closeMenu = () => {
     setIsMenuOpen(false);
-  }, []);
+    setOpenDropdown(null);
+    if (typeof document !== 'undefined' && document.activeElement instanceof HTMLElement) {
+      document.activeElement.blur();
+    }
+  };
+
+  // Close menu on route change
+  useEffect(() => {
+    closeMenu();
+  }, [pathname]);
 
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
-    setExpandedDropdowns({});
+    setOpenDropdown(null);
   };
 
-  const closeMenu = () => {
-    setIsMenuOpen(false);
-    setExpandedDropdowns({});
-  };
-
-  const toggleMobileDropdown = (id: string) => {
-    if (window.innerWidth <= 768) {
-      setExpandedDropdowns((prev) => ({
-        ...prev,
-        [id]: !prev[id],
-      }));
-    }
+  const toggleDropdown = (id: string) => {
+    setOpenDropdown((prev) => (prev === id ? null : id));
   };
 
   const items = navItems[lang];
@@ -145,20 +145,33 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
             <div className="nav-left">
               {items.left.map((item) => {
                 if (item.subItems) {
-                  const isExpanded = expandedDropdowns[item.id] || false;
+                  const isExpanded = openDropdown === item.id;
                   return (
-                    <li key={item.id} className="nav-item-dropdown">
+                    <li
+                      key={item.id}
+                      className="nav-item-dropdown"
+                      onMouseEnter={() => {
+                        if (typeof window !== 'undefined' && window.innerWidth > 768) {
+                          setOpenDropdown(item.id);
+                        }
+                      }}
+                      onMouseLeave={() => {
+                        if (typeof window !== 'undefined' && window.innerWidth > 768) {
+                          setOpenDropdown(null);
+                        }
+                      }}
+                    >
                       <button
                         className="nav-link dropdown-trigger"
                         id={item.id}
-                        onClick={() => toggleMobileDropdown(item.id)}
+                        onClick={() => toggleDropdown(item.id)}
                         aria-expanded={isExpanded}
                         style={{ background: 'none', border: 'none', cursor: 'pointer', display: 'flex', alignItems: 'center', gap: '6px' }}
                       >
                         <span>{item.label}</span>
                         <i className="fa-solid fa-chevron-down caret-icon" style={{ fontSize: '0.75rem', transition: 'transform 0.3s ease', transform: isExpanded ? 'rotate(180deg)' : 'none' }}></i>
                       </button>
-                      <ul className={`dropdown-menu-list ${isExpanded ? 'mobile-show' : ''}`}>
+                      <ul className={`dropdown-menu-list ${isExpanded ? 'open' : ''}`}>
                         {item.subItems.map((sub) => (
                           <li key={sub.id}>
                             <Link
