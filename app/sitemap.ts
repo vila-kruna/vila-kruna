@@ -58,8 +58,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { sr: 'kako-do-nas-sa-autoputa', en: 'how-to-reach-us-from-highway', freq: 'monthly' as const, priority: 0.7 },
     { sr: 'superior-soba', en: 'superior-room', freq: 'monthly' as const, priority: 0.8 },
     { sr: 'tih-miran-kutak-sa-parkingom', en: 'quiet-peaceful-corner-with-parking', freq: 'monthly' as const, priority: 0.7 },
-    { sr: 'dnevni-smestaj', en: 'day-use-accommodation', freq: 'monthly' as const, priority: 0.7 },
-    { sr: 'grupe-i-porodice', en: 'groups-and-families', freq: 'monthly' as const, priority: 0.7 },
+    // Service Pages (SR + EN)
+    { sr: 'usluge', en: 'services', freq: 'weekly' as const, priority: 0.8 },
+    { sr: 'usluge/dnevni-smestaj', en: 'services/day-use-accommodation', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'usluge/produzeni-boravak', en: 'services/extended-stay', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'usluge/pranje-vesa-za-goste', en: 'services/laundry-service', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'usluge/organizacija-prevoza', en: 'services/transportation-service', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'usluge/smestaj-za-radnike', en: 'services/workers-accommodation', freq: 'monthly' as const, priority: 0.7 },
+    { sr: 'usluge/smestaj-za-organizovane-grupe', en: 'services/group-accommodation', freq: 'monthly' as const, priority: 0.7 },
   ];
 
   const staticPages: MetadataRoute.Sitemap = staticPairs.flatMap(pair =>

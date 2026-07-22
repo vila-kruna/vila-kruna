@@ -31,9 +31,13 @@ const footerData: Record<string, {
       { href: '/novosti', label: 'Novosti' },
       { href: '/rezervacija', label: 'Rezervacija' },
     ],
-    accomTitle: 'Smeštaj',
+    accomTitle: 'Usluge & Smeštaj',
     accomLinks: [
       { href: '/smestaj', label: 'Naše sobe' },
+      { href: '/usluge', label: 'Sve usluge' },
+      { href: '/usluge/dnevni-smestaj', label: 'Dnevni smeštaj' },
+      { href: '/usluge/smestaj-za-radnike', label: 'Smeštaj za radnike' },
+      { href: '/usluge/produzeni-boravak', label: 'Produženi boravak' },
       { href: '/cenovnik', label: 'Cenovnik usluga' },
       { href: '/rezervacija', label: 'Rezervacija' },
     ],
@@ -53,9 +57,13 @@ const footerData: Record<string, {
       { href: '/en/news', label: 'News' },
       { href: '/en/booking', label: 'Booking' },
     ],
-    accomTitle: 'Accommodation',
+    accomTitle: 'Services & Accommodation',
     accomLinks: [
       { href: '/en/accommodation', label: 'Our Rooms' },
+      { href: '/en/services', label: 'All Services' },
+      { href: '/en/services/day-use-accommodation', label: 'Day Use Accommodation' },
+      { href: '/en/services/workers-accommodation', label: 'Workers Accommodation' },
+      { href: '/en/services/extended-stay', label: 'Extended Stay' },
       { href: '/en/pricing', label: 'Price List' },
       { href: '/en/booking', label: 'Booking' },
     ],
@@ -129,7 +137,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
             <h4>{data.contactTitle}</h4>
             <ul className="footer-contact-list">
               <li className="footer-contact-item">
-                <a 
+                <a
                   href="https://www.google.com/maps/search/Svetozara+Ivačkovića+4,+Rakovica,+Beograd"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -144,7 +152,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                 </a>
               </li>
               <li className="footer-contact-item">
-                <a 
+                <a
                   href="tel:+381643339555"
                   className="footer-contact-link"
                   style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}
@@ -157,7 +165,7 @@ export default function Footer({ lang }: { lang: 'sr' | 'en' }) {
                 </a>
               </li>
               <li className="footer-contact-item">
-                <a 
+                <a
                   href="mailto:info@vilakruna.rs"
                   className="footer-contact-link"
                   style={{ display: 'flex', alignItems: 'flex-start', gap: '12px', color: 'inherit', textDecoration: 'none' }}

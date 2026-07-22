@@ -164,7 +164,7 @@ export default function EnglishHomePage() {
               <h2>Welcome to Vila Kruna</h2>
               <div>
                 <p>Vila Kruna is a modern villa in a peaceful Belgrade suburb, offering the perfect solution for anyone searching for <Link href="/en/quiet-peaceful-corner-with-parking">quiet and comfortable accommodation with free parking in Belgrade</Link>. Thanks to our strategic location, it is extremely <Link href="/en/how-to-reach-us-from-highway">easy to reach us from the highway or bypass road</Link>.</p>
-                <p>We pride ourselves on our highly spacious, air-conditioned rooms designed for complete rest. Whether you need a short and discreet <Link href="/en/day-use-accommodation">day use rest or daytime accommodation</Link> during your journey, or comfortable <Link href="/en/groups-and-families">lodging for groups and family trips</Link> in Belgrade, we cater to all your needs.</p>
+                <p>We pride ourselves on our highly spacious, air-conditioned rooms designed for complete rest. Whether you need a short and discreet <Link href="/en/services/day-use-accommodation">day use rest or daytime accommodation</Link> during your journey, or comfortable <Link href="/en/services/group-accommodation">lodging for groups and family trips</Link> in Belgrade, we cater to all your needs.</p>
                 <p>For guests seeking a touch of premium luxury, we recommend booking our exclusive <Link href="/en/superior-room">superior room with a private sauna and jacuzzi</Link> to refresh and fully unwind.</p>
               </div>
               <div style={{ marginTop: '32px' }}>

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
-import FaqSection from '../../components/FaqSection';
+import FaqSection from '../../../components/FaqSection';
 
 interface FAQItem {
   question: string;
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
   title: 'Dnevni smeštaj i dnevni odmor u Beogradu | Vila Kruna',
   description: 'Tražite dnevni smeštaj ili dnevni odmor na nekoliko sati u Beogradu? Vila Kruna nudi komforne, klimatizovane sobe sa parkingom i potpunom diskrecijom.',
   alternates: {
-    canonical: '/dnevni-smestaj',
+    canonical: '/usluge/dnevni-smestaj',
   },
   openGraph: {
     title: 'Dnevni smeštaj i dnevni odmor u Beogradu | Vila Kruna',
     description: 'Tražite dnevni smeštaj ili dnevni odmor na nekoliko sati u Beogradu? Vila Kruna nudi komforne, klimatizovane sobe sa parkingom.',
-    url: '/dnevni-smestaj',
+    url: '/usluge/dnevni-smestaj',
   },
 };
 

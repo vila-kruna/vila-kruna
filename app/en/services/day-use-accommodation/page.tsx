@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Script from 'next/script';
-import FaqSection from '../../components/FaqSection';
+import FaqSection from '../../../components/FaqSection';
 
 interface FAQItem {
   question: string;
@@ -39,12 +39,12 @@ export const metadata: Metadata = {
   title: 'Day Use Accommodation & Day Rest in Belgrade | Vila Kruna',
   description: 'Need day use accommodation or a day rest room for a few hours in Belgrade? Vila Kruna offers comfortable, air-conditioned rooms with free parking and full discretion.',
   alternates: {
-    canonical: '/en/day-use-accommodation',
+    canonical: '/en/services/day-use-accommodation',
   },
   openGraph: {
     title: 'Day Use Accommodation & Day Rest in Belgrade | Vila Kruna',
     description: 'Need day use accommodation or a day rest room for a few hours in Belgrade? Vila Kruna offers comfortable, air-conditioned rooms with free parking.',
-    url: '/en/day-use-accommodation',
+    url: '/en/services/day-use-accommodation',
   },
 };
 

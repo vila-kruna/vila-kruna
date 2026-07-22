@@ -184,7 +184,7 @@ export default function Home() {
 
               <div>
                 <p>Vila Kruna je moderno opremljena vila u mirnom beogradskom naselju Rakovica, idealna za sve koji traže <Link href="/tih-miran-kutak-sa-parkingom">tih i miran smeštaj sa besplatnim parkingom u Beogradu</Link>. Nalazimo se na odličnoj poziciji pa je stoga izuzetno <Link href="/kako-do-nas-sa-autoputa">lako doći do nas sa auto-puta ili obilaznice</Link> iz svih pravaca.</p>
-                <p>Nudimo Vam izuzetno prostrane i klimatizovane sobe stvorene za vrhunski odmor. Bilo da Vam je potreban diskretan <Link href="/dnevni-smestaj">dnevni odmor i dnevni smeštaj</Link> tokom tranzita kroz Srbiju, udoban kutak za parove ili pak komforan <Link href="/grupe-i-porodice">smeštaj za veće grupe i porodična putovanja</Link> — Vila Kruna je Vaš pravi izbor.</p>
+                <p>Nudimo Vam izuzetno prostrane i klimatizovane sobe stvorene za vrhunski odmor. Bilo da Vam je potreban diskretan <Link href="/usluge/dnevni-smestaj">dnevni odmor i dnevni smeštaj</Link> tokom tranzita kroz Srbiju, udoban kutak za parove ili pak komforan <Link href="/usluge/smestaj-za-organizovane-grupe">smeštaj za veće grupe i porodična putovanja</Link> — Vila Kruna je Vaš pravi izbor.</p>
                 <p>Za one koji traže dodatnu dozu opuštanja, preporučujemo našu premium <Link href="/superior-soba">superior sobu sa saunom i đakuzijem</Link> u kojoj ćete se osvežiti i potpuno regenerisati.</p>
               </div>
 

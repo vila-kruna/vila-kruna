@@ -16,7 +16,7 @@ interface ConsentBannerProps {
 const translations = {
   sr: {
     title: 'Kolačići & Privatnost',
-    description: 'Koristimo kolačiće kako bismo poboljšali vaše iskustvo na našem sajtu, analizirali saobraćaj i prikazivali personalizovane oglase. Klikom na "Prihvati sve" pristanete na našu upotrebu svih kolačića.',
+    description: 'Koristimo kolačiće kako bismo poboljšali vaše iskustvo na našem sajtu, analizirali saobraćaj i prikazivali personalizovane oglase. Klikom na "Prihvati sve" pristaneje na našu upotrebu svih kolačića.',
     acceptAll: 'Prihvati sve',
     decline: 'Odbij',
     customize: 'Prilagodi',
@@ -83,7 +83,7 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
         const parsed = JSON.parse(settings);
         setAnalyticsAllowed(!!parsed.analytics_storage);
         setMarketingAllowed(!!parsed.ad_storage);
-      } catch (e) {}
+      } catch (e) { }
     }
   }, []);
 
@@ -95,7 +95,7 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
     if (typeof window !== 'undefined') {
       window.dataLayer = window.dataLayer || [];
       // Ensure we push a valid gtag structure to dataLayer as fallback
-      const gtag = window.gtag || function() { (window.dataLayer as Object[]).push(arguments); };
+      const gtag = window.gtag || function () { (window.dataLayer as Object[]).push(arguments); };
       gtag('consent', 'update', {
         analytics_storage: analytics ? 'granted' : 'denied',
         ad_storage: marketing ? 'granted' : 'denied',
@@ -114,7 +114,7 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
     };
     localStorage.setItem('vk_consent_status', 'accepted');
     localStorage.setItem('vk_consent_settings', JSON.stringify(settings));
-    
+
     triggerConsentUpdate(true, true);
     setIsVisible(false);
   };
@@ -157,23 +157,23 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
               <p className="consent-banner-desc">{t.description}</p>
             </div>
             <div className="consent-banner-actions">
-              <button 
-                type="button" 
-                className="btn btn-secondary btn-sm consent-btn" 
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm consent-btn"
                 onClick={handleDecline}
               >
                 {t.decline}
               </button>
-              <button 
-                type="button" 
-                className="btn btn-secondary btn-sm consent-btn" 
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm consent-btn"
                 onClick={() => setIsCustomizing(true)}
               >
                 {t.customize}
               </button>
-              <button 
-                type="button" 
-                className="btn btn-primary btn-sm consent-btn" 
+              <button
+                type="button"
+                className="btn btn-primary btn-sm consent-btn"
                 onClick={handleAcceptAll}
               >
                 {t.acceptAll}
@@ -183,7 +183,7 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
         ) : (
           <div className="consent-banner-custom">
             <h3 className="consent-banner-title">{t.title}</h3>
-            
+
             <div className="consent-banner-options">
               {/* Necessary */}
               <div className="consent-option-item">
@@ -199,10 +199,10 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
                 <div className="consent-option-header">
                   <span className="consent-option-title">{t.categories.analytics.title}</span>
                   <label className="switch-toggle">
-                    <input 
-                      type="checkbox" 
-                      checked={analyticsAllowed} 
-                      onChange={(e) => setAnalyticsAllowed(e.target.checked)} 
+                    <input
+                      type="checkbox"
+                      checked={analyticsAllowed}
+                      onChange={(e) => setAnalyticsAllowed(e.target.checked)}
                     />
                     <span className="slider"></span>
                   </label>
@@ -215,10 +215,10 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
                 <div className="consent-option-header">
                   <span className="consent-option-title">{t.categories.marketing.title}</span>
                   <label className="switch-toggle">
-                    <input 
-                      type="checkbox" 
-                      checked={marketingAllowed} 
-                      onChange={(e) => setMarketingAllowed(e.target.checked)} 
+                    <input
+                      type="checkbox"
+                      checked={marketingAllowed}
+                      onChange={(e) => setMarketingAllowed(e.target.checked)}
                     />
                     <span className="slider"></span>
                   </label>
@@ -228,16 +228,16 @@ export default function ConsentBanner({ lang }: ConsentBannerProps) {
             </div>
 
             <div className="consent-banner-actions">
-              <button 
-                type="button" 
-                className="btn btn-secondary btn-sm consent-btn" 
+              <button
+                type="button"
+                className="btn btn-secondary btn-sm consent-btn"
                 onClick={() => setIsCustomizing(false)}
               >
                 {t.back}
               </button>
-              <button 
-                type="button" 
-                className="btn btn-primary btn-sm consent-btn" 
+              <button
+                type="button"
+                className="btn btn-primary btn-sm consent-btn"
                 onClick={handleSavePreferences}
               >
                 {t.savePreferences}

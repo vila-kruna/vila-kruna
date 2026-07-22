@@ -23,14 +23,26 @@ const navItems: Record<string, { left: NavItem[]; right: NavItem[] }> = {
       { href: '/smestaj', label: 'Smeštaj', id: 'nav-accommodation' },
       { href: '/cenovnik', label: 'Cenovnik', id: 'nav-pricing' },
       {
+        label: 'Usluge',
+        id: 'nav-services',
+        href: '/usluge',
+        subItems: [
+          { href: '/usluge', label: 'Sve usluge', id: 'nav-sub-all-services' },
+          { href: '/usluge/dnevni-smestaj', label: 'Dnevni smeštaj', id: 'nav-sub-dayuse' },
+          { href: '/usluge/produzeni-boravak', label: 'Produženi boravak', id: 'nav-sub-longstay' },
+          { href: '/usluge/pranje-vesa-za-goste', label: 'Pranje veša za goste', id: 'nav-sub-laundry' },
+          { href: '/usluge/organizacija-prevoza', label: 'Organizacija prevoza', id: 'nav-sub-transport' },
+          { href: '/usluge/smestaj-za-radnike', label: 'Smeštaj za radnike', id: 'nav-sub-workers' },
+          { href: '/usluge/smestaj-za-organizovane-grupe', label: 'Smeštaj za grupe', id: 'nav-sub-groups-service' },
+        ],
+      },
+      {
         label: 'Korisno',
         id: 'nav-recommendations',
         subItems: [
           { href: '/kako-do-nas-sa-autoputa', label: 'Kako do nas sa auto-puta', id: 'nav-sub-highway' },
           { href: '/superior-soba', label: 'Superior soba', id: 'nav-sub-superior' },
           { href: '/tih-miran-kutak-sa-parkingom', label: 'Miran kutak sa parkingom', id: 'nav-sub-quiet' },
-          { href: '/dnevni-smestaj', label: 'Dnevni smeštaj', id: 'nav-sub-dayuse' },
-          { href: '/grupe-i-porodice', label: 'Za grupe i porodice', id: 'nav-sub-groups' },
         ],
       },
     ],
@@ -45,14 +57,26 @@ const navItems: Record<string, { left: NavItem[]; right: NavItem[] }> = {
       { href: '/en/accommodation', label: 'Accommodation', id: 'nav-accommodation' },
       { href: '/en/pricing', label: 'Pricing', id: 'nav-pricing' },
       {
+        label: 'Services',
+        id: 'nav-services-en',
+        href: '/en/services',
+        subItems: [
+          { href: '/en/services', label: 'All Services', id: 'nav-sub-all-services-en' },
+          { href: '/en/services/day-use-accommodation', label: 'Day Use Accommodation', id: 'nav-sub-dayuse-en' },
+          { href: '/en/services/extended-stay', label: 'Extended Stay', id: 'nav-sub-longstay-en' },
+          { href: '/en/services/laundry-service', label: 'Laundry Service', id: 'nav-sub-laundry-en' },
+          { href: '/en/services/transportation-service', label: 'Transportation & Transfers', id: 'nav-sub-transport-en' },
+          { href: '/en/services/workers-accommodation', label: 'Workers Accommodation', id: 'nav-sub-workers-en' },
+          { href: '/en/services/group-accommodation', label: 'Group Accommodation', id: 'nav-sub-groups-service-en' },
+        ],
+      },
+      {
         label: 'Explore',
         id: 'nav-explore',
         subItems: [
           { href: '/en/how-to-reach-us-from-highway', label: 'How to reach us from highway', id: 'nav-sub-highway' },
           { href: '/en/superior-room', label: 'Superior Room', id: 'nav-sub-superior' },
           { href: '/en/quiet-peaceful-corner-with-parking', label: 'Quiet corner with parking', id: 'nav-sub-quiet' },
-          { href: '/en/day-use-accommodation', label: 'Day use', id: 'nav-sub-dayuse' },
-          { href: '/en/groups-and-families', label: 'Groups and families', id: 'nav-sub-groups' },
         ],
       },
     ],
@@ -89,7 +113,7 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
     setIsMenuOpen((prev) => !prev);
     setExpandedDropdowns({});
   };
-  
+
   const closeMenu = () => {
     setIsMenuOpen(false);
     setExpandedDropdowns({});
@@ -156,10 +180,10 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
                 }
                 return (
                   <li key={item.id}>
-                    <Link 
-                      href={item.href || '#'} 
-                      className="nav-link" 
-                      id={item.id} 
+                    <Link
+                      href={item.href || '#'}
+                      className="nav-link"
+                      id={item.id}
                       onClick={() => {
                         closeMenu();
                         sendGTMEvent({ event: 'nav_click', destination: item.id });
@@ -174,10 +198,10 @@ export default function Header({ lang }: { lang: 'sr' | 'en' }) {
             <div className="nav-right">
               {items.right.map((item) => (
                 <li key={item.id}>
-                  <Link 
-                    href={item.href || '#'} 
-                    className="nav-link" 
-                    id={item.id} 
+                  <Link
+                    href={item.href || '#'}
+                    className="nav-link"
+                    id={item.id}
                     onClick={() => {
                       closeMenu();
                       sendGTMEvent({ event: 'nav_click', destination: item.id });
